@@ -2,6 +2,7 @@ import React from "react"
 import "./layout.css"
 // import "bootstrap/dist/css/bootstrap.min.css"
 import Carousel from "react-bootstrap/Carousel"
+import Button from "react-bootstrap/Button"
 import s1 from "../img/Slider1.jpg"
 import s2 from "../img/Slider2.jpg"
 import s3 from "../img/Slider3.jpg"
@@ -32,7 +33,7 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/foundation.html"
+                href="/foundation"
                 className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
               >
                 Learn More
@@ -50,7 +51,7 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/devops.html"
+                href="/devops"
                 className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
               >
                 learn more
@@ -64,7 +65,7 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/audit.html"
+                href="/audit"
                 className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
               >
                 learn more
@@ -83,7 +84,7 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/enterprisemanagedservice.html"
+                href="/enterprisemanagedservice"
                 className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
               >
                 learn more
@@ -96,7 +97,7 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/CloudManagedBackup.html"
+                href="/CloudManagedBackup"
                 className="btn text-white bg-yellow text-uppercase btnLearn float-left"
               >
                 learn more
@@ -124,7 +125,7 @@ const Slider = () => {
             <div class="row">
               <div className="card-deck">
                 <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/foundation.html" className="noLine">
+                  <a href="/foundation" className="noLine">
                     <img
                       className="card-img-top"
                       src={OpenPlatform}
@@ -139,7 +140,7 @@ const Slider = () => {
                 </div>
 
                 <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/transformation.html" className="noLine">
+                  <a href="/transformation" className="noLine">
                     <img
                       className="card-img-top"
                       src={Transformation}
@@ -154,7 +155,7 @@ const Slider = () => {
                 </div>
 
                 <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/operations.html" className="noLine">
+                  <a href="/operations" className="noLine">
                     <img
                       className="card-img-top"
                       src={Solutions}
@@ -167,11 +168,12 @@ const Slider = () => {
                 </div>
               </div>
             </div>
-            <button class="btn btn-demo noLine">
-              <a class="noLine text-white" href="/askfordemo">
-                Ask For Demo
-              </a>
-            </button>
+            <Button
+              className="btn btn-demo noLine noLine text-white z"
+              href="/askfordemo"
+            >
+              Ask For Demo
+            </Button>
           </div>
           {/* Card Ends */}
 
@@ -185,7 +187,7 @@ const Slider = () => {
             <div className="text-center text-white pt-4 ">
               <p>
                 <a
-                  href="/foundation.html"
+                  href="/foundation"
                   className="btn text-white bg-logoblue text-uppercase btnLearn"
                 >
                   learn more
@@ -205,7 +207,7 @@ const Slider = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            <a href="/softwaredefined.html" className="noLine w-75">
+            <a href="/softwaredefined" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">
@@ -228,7 +230,7 @@ const Slider = () => {
                 </div>
               </div>
             </a>
-            <a href="/realtime.html" className="noLine w-75">
+            <a href="/realtime" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">
@@ -251,7 +253,7 @@ const Slider = () => {
                 </div>
               </div>
             </a>
-            <a href="/storagemigration.html" className="noLine w-75">
+            <a href="/storagemigration" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">
@@ -281,7 +283,7 @@ const Slider = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            <a href="/networkdesign.html" className="noLine w-75">
+            <a href="/networkdesign" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">
@@ -300,7 +302,7 @@ const Slider = () => {
                 </div>
               </div>
             </a>
-            <a href="/storagetier.html" className="noLine w-75">
+            <a href="/storagetier" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">
@@ -319,7 +321,7 @@ const Slider = () => {
                 </div>
               </div>
             </a>
-            <a href="/disasterrecovery.html" className="noLine w-75">
+            <a href="/disasterrecovery" className="noLine w-75">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
                   <div className="img_zoom">

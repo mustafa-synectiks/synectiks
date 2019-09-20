@@ -1,6 +1,7 @@
 import React from "react"
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"
 import { FaBars } from "react-icons/fa"
+import Social from "../components/social-icons"
 import logo from "../img/logo.png"
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <Navbar fixed="top" bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="" />
+          <img src={logo} alt="synectiks" />
         </Navbar.Brand>
         <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav">
           <FaBars />

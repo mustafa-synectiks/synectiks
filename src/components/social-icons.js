@@ -1,5 +1,9 @@
 import React from "react"
-import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa"
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaLinkedin,
+} from "react-icons/fa"
 
 const tweet = {
   color: "#38A1F3",

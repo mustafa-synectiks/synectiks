@@ -10,6 +10,9 @@ main {
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
+.z {
+  z-index: 9999;
+}
 @media (max-width: 420px) {
   .fh3 {
     font-size: 18px;
