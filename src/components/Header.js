@@ -8,6 +8,23 @@ const Header = () => {
   return (
     <Navbar fixed="top" bg="light" expand="lg">
       <Container>
+        <div className="d-flex">
+          <a href="/contactus">Contact | </a>
+          <div>
+            {Social.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.icon}
+                </a>
+              )
+            })}
+          </div>
+        </div>
         <Navbar.Brand href="#home">
           <img src={logo} alt="synectiks" />
         </Navbar.Brand>
