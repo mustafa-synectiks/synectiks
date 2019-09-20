@@ -27,6 +27,7 @@ const Header = () => {
               <NavDropdown
                 title="Cloud Hosted Services"
                 id="basic-nav-dropdown"
+                className="dropdown-submenu dropright"
               >
                 <NavDropdown.Item href="/devops">Nested</NavDropdown.Item>
                 <NavDropdown.Item href="/devops">Nested</NavDropdown.Item>
