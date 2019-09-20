@@ -167,6 +167,11 @@ const Slider = () => {
                 </div>
               </div>
             </div>
+            <button class="btn btn-demo noLine">
+              <a class="noLine text-white" href="/askfordemo">
+                Ask For Demo
+              </a>
+            </button>
           </div>
           {/* Card Ends */}
 
