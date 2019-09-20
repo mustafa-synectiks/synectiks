@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import Header from "./Header"
 import $ from "jquery"
-// import Footer from "./Footer"
+import Footer from "./Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -93,48 +93,12 @@ const Layout = ({ children }) => {
         $("#othersource").hide()
       }
     })
-
-    // $(document).ready(function(){
-    //     $("#otherservice").style.display = "none";
-    //   $("#service").change(function () {
-    //     var val = $(this).val();
-    //     $("#otherservice").style.display = "none";
-    //     if (val == "Others") {
-    //       $("#otherservice").style.display = "block";
-    //     }
-    //      else {
-    //       $("#otherservice").style.display = "none";
-    //     }
-    //   });
-    // });
-
-    // $(document).ready(function(){
-    //       $("button").click(function(){
-    //           location.reload(true);
-    //       });
-    //   });
-
-    //   function handleChange(nameSelect)
-    // {
-    //     if(nameSelect){
-    //       others = document.getElementById("others").value;
-    //         if(others == nameSelect.value){
-    //             document.getElementById("otherservice").style.display = "block";
-    //         }
-    //         else{
-    //             document.getElementById("otherservice").style.display = "none";
-    //         }
-    //     }
-    //     else{
-    //         document.getElementById("otherservice").style.display = "none";
-    //     }
-    // }
   })
   return (
     <main>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   )
 }

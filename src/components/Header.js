@@ -16,11 +16,15 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <NavDropdown title="Transformation" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/devops">Devops</NavDropdown.Item>
+              <NavDropdown.Item href="/devops">
+                Devops Transformation
+              </NavDropdown.Item>
               <NavDropdown.Item href="/foundation">Foundation</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/operations">
+                Migrations & Optimization
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/microservices">
+                Microservices Transformation
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Cloud" id="basic-nav-dropdown">
@@ -29,48 +33,47 @@ const Header = () => {
                 id="basic-nav-dropdown"
                 className="dropdown-submenu dropright"
               >
-                <NavDropdown.Item href="/devops">Nested</NavDropdown.Item>
-                <NavDropdown.Item href="/devops">Nested</NavDropdown.Item>
-                <NavDropdown.Item href="/devops">Nested</NavDropdown.Item>
+                <NavDropdown.Item href="/HostedInfrastructure">
+                  Hosted Infrastructure
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/CloudManagedBackup">
+                  Cloud Managed Backup
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/CloudDisasterRecovery">
+                  Cloud Disaster Recovery
+                </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown.Item href="/devops">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="/privatecloud">
+                Private Cloud
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>{" "}
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/hybridcloud">
+                Hybrid Cloud
               </NavDropdown.Item>
+              <NavDropdown.Item href="/publiccloud">
+                Public Cloud
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Item href="/colocation">Colocation</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/devops">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="/applicationservices">
+                Application Services
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/managedservices">
+                Managed Services
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/networkservices">
+                Network Services
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resources" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/devops">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>{" "}
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/featured">Featured</NavDropdown.Item>
+              <NavDropdown.Item href="/casestudy">
+                Success Stories
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Company" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/devops">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>{" "}
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/about">About</NavDropdown.Item>
+              <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
