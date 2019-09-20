@@ -11,7 +11,7 @@ import equinix from "../../img/equinix.svg"
 import microsoft from "../../img/microsoft.svg"
 import nutanix from "../../img/nutanix.svg"
 import simplivity from "../../img/simplivity.svg"
-
+import "../../components/layout.css"
 const blue = {
   color: "#007CC2",
 }
@@ -22,7 +22,6 @@ const lineHeight = {
   lineHeight: "35px",
 }
 export class Aboutus extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

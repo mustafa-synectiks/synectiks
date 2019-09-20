@@ -4,7 +4,7 @@ import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
 import CloudCommon from "../../img/CloudCommon.png"
 import HybridCloud from "../../img/HybridCloud.jpg"
-
+import "../../components/layout.css"
 export class Hybridcloud extends React.Component {
   constructor(props) {
     super(props)

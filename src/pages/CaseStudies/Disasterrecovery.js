@@ -1,13 +1,13 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import ds from "../../img/DisasterRecovery_Subpage2.jpg"
+import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 
 export class Disasterrecovery extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

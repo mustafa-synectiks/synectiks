@@ -9,6 +9,7 @@ import OperationsGraph from "../../img/OperationsGraph.png"
 import Solutions from "../../img/Solutions.png"
 import transformation from "../../img/Transformation.png"
 import OpenPlatform from "../../img/OpenPlatform.png"
+import "../../components/layout.css"
 
 class Operations extends React.Component {
   componentDidMount() {

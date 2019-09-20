@@ -7,8 +7,20 @@
 /* main {
   margin-top: 5.5rem;
 } */
+.dropdown-submenu.dropright.dropdown.nav-item > a.dropdown-toggle.nav-link {
+  color: white !important;
+  margin-left: 10px;
+}
+.dropdown-menu {
+  background: #007cc2 !important;
+}
 .dropdown:hover > .dropdown-menu {
   display: block;
+}
+a.dropdown-toggle.nav-link {
+  color: #007cc2 !important;
+  margin-left: 2rem;
+  font-size: 1.3rem;
 }
 .z {
   z-index: 9999;
@@ -538,7 +550,7 @@ body {
   /* font-family: "Montserrat" !important; */
   font-family: "Roboto" !important;
   font-style: normal;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 h1,
@@ -943,7 +955,7 @@ h6 {
 
 .main-card {
   position: relative;
-  top: 8em;
+  top: 3em;
 }
 .card-shadow {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);

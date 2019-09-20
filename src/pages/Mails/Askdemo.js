@@ -2,8 +2,9 @@ import * as React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import Layout from '../../components/layout'
-
 import NiceToMeet from '../../img/NiceToMeet.png'
+import '../../components/layout.css'
+
 
 function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service, otherservice, othersource) {
     // we are going to store errors for all fields

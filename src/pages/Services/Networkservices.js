@@ -1,8 +1,8 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import N from "../../img/NetworkServices.jpg"
+import "../../components/layout.css"
 export class Networkservices extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

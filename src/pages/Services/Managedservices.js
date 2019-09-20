@@ -1,9 +1,8 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import ManagedServices from "../../img/ManagedServices.jpg"
-
+import "../../components/layout.css"
 export class Managedservices extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

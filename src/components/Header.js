@@ -4,95 +4,96 @@ import { FaBars } from "react-icons/fa"
 import Topbar from "./Topbar"
 import logo from "../img/logo.png"
 
-const z ={
-zIndex: '9999'
+const z = {
+  zIndex: "9999",
 }
 
 const Header = () => {
   return (
-<div>
-  <div className="container d-flex justify-content-between mt-3">
-    <div></div>
-          <Topbar />
-          </div>
+    <div>
+      <div className="container d-flex justify-content-between mt-3">
+        <div></div>
+        <Topbar />
+      </div>
       <Navbar expand="lg" className={z}>
         <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} alt="synectiks" />
-        </Navbar.Brand>
-        <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav">
-          <FaBars />
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <NavDropdown title="Transformation" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/devops">
-                Devops Transformation
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/foundation">Foundation</NavDropdown.Item>
-              <NavDropdown.Item href="/operations">
-                Migrations & Optimization
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/microservices">
-                Microservices Transformation
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Cloud" id="basic-nav-dropdown">
-              <NavDropdown
-                title="Cloud Hosted Services"
-                id="basic-nav-dropdown"
-                className="dropdown-submenu dropright"
-              >
-                <NavDropdown.Item href="/HostedInfrastructure">
-                  Hosted Infrastructure
+          <Navbar.Brand href="/">
+            <img src={logo} alt="synectiks" />
+          </Navbar.Brand>
+          <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav">
+            <FaBars />
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <NavDropdown title="Transformation" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/devops">
+                  Devops Transformation
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/CloudManagedBackup">
-                  Cloud Managed Backup
+                <NavDropdown.Item href="/foundation">
+                  Foundation
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/CloudDisasterRecovery">
-                  Cloud Disaster Recovery
+                <NavDropdown.Item href="/operations">
+                  Migrations & Optimization
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/microservices">
+                  Microservices Transformation
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown.Item href="/privatecloud">
-                Private Cloud
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/hybridcloud">
-                Hybrid Cloud
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/publiccloud">
-                Public Cloud
-              </NavDropdown.Item>{" "}
-              <NavDropdown.Item href="/colocation">Colocation</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/applicationservices">
-                Application Services
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/managedservices">
-                Managed Services
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/networkservices">
-                Network Services
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Resources" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/featured">Featured</NavDropdown.Item>
-              <NavDropdown.Item href="/casestudy">
-                Success Stories
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Company" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/about">About</NavDropdown.Item>
-              <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+              <NavDropdown title="Cloud" id="basic-nav-dropdown">
+                <NavDropdown
+                  title="Cloud Hosted Services"
+                  id="basic-nav-dropdown"
+                  className="dropdown-submenu dropright"
+                >
+                  <NavDropdown.Item href="/HostedInfrastructure">
+                    Hosted Infrastructure
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/CloudManagedBackup">
+                    Cloud Managed Backup
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/CloudDisasterRecovery">
+                    Cloud Disaster Recovery
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown.Item href="/privatecloud">
+                  Private Cloud
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/hybridcloud">
+                  Hybrid Cloud
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/publiccloud">
+                  Public Cloud
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Item href="/colocation">
+                  Colocation
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Services" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/applicationservices">
+                  Application Services
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/managedservices">
+                  Managed Services
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/networkservices">
+                  Network Services
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Resources" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/featured">Featured</NavDropdown.Item>
+                <NavDropdown.Item href="/casestudy">
+                  Success Stories
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Company" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
           </Navbar.Collapse>
-
-          </Container>
+        </Container>
       </Navbar>
-
-      </div>
-
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
 import privateCloud from "../../img/PrivateCloud.jpg"
 import CloudCommon from "../../img/CloudCommon.png"
-
+import "../../components/layout.css"
 class Privatecloud extends React.Component {
   constructor(props) {
     super(props)

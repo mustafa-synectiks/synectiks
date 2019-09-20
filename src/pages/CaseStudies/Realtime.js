@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import rjc from "../../img/RelianceJioCasestudy.jpg"
+import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 class Realtime extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

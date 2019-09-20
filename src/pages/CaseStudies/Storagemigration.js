@@ -2,13 +2,13 @@ import * as React from "react"
 import cb from "../../img/Storagemigration.jpg"
 import as from "../../img/Application-Services-Slider.png"
 import Layout from "../../components/layout"
+import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 
 class Storagemigration extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

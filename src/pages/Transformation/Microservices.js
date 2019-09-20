@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import mm from "../../img/monovsmicro.png"
 import ms from "../../img/Microservice_1.png"
 import mcs from "../../img/Microservicesmain.jpg"
-
+import "../../components/layout.css"
 // const wid = {
 //   width: "91%",
 // }

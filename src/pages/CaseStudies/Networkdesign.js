@@ -1,13 +1,13 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import nd from "../../img/NetworkDesign_CS.jpg"
+import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 
 export class Networkdesign extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

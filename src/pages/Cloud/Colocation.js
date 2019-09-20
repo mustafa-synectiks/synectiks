@@ -8,7 +8,7 @@ import CloudCommon from "../../img/CloudCommon.png"
 import colocation from "../../img/Colocation.png"
 import Staff from "../../img/Staff.png"
 import Scale from "../../img/Scale.png"
-
+import "../../components/layout.css"
 export class Colocation extends React.Component {
   constructor(props) {
     super(props)

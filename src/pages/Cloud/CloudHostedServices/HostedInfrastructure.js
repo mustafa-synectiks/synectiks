@@ -4,6 +4,7 @@ import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
 import HostedInfra from "../../../img/HostedInfra.png"
 import CommonCloud from "../../../img/CloudCommon.png"
+import "../../../components/layout.css"
 
 const wid = {
   width: "91%",

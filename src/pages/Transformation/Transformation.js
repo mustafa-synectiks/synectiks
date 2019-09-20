@@ -8,6 +8,7 @@ import Solutions from "../../img/Solutions.png"
 import transformation from "../../img/Transformation.png"
 import Refactor from "../../img/Refactor.png"
 import transformation2 from "../../img/transformation_2.png"
+import "../../components/layout.css"
 
 export class Transformation extends React.Component {
   componentDidMount() {

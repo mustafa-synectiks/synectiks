@@ -7,9 +7,9 @@ import SoftwareDefinedTransformation from "../../img/CS_SoftwareDefinedTransform
 import NetworkDesign from "../../img/CS_NetworkDesign.jpg"
 import StorageTier from "../../img/CS_StorageTier.jpg"
 import DisasterRecovery from "../../img/CS_DisasterRecovery.jpg"
+import "../../components/layout.css"
 
 export class Casestudy extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

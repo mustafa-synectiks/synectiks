@@ -5,9 +5,9 @@ import FS from "../../img/FeDevOps-Strategies.png"
 import FT from "../../img/FeEnterprise-Transformation.png"
 import FMP from "../../img/FeMicroservice-Platform.png"
 import FP from "../../img/FeOpen-Platform.png"
+import "../../components/layout.css"
 
 export class Featured extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

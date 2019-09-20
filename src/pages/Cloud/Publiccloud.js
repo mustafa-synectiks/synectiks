@@ -6,7 +6,7 @@ import CloudAzure from "../../img/CloudAzure.png"
 import CloudAWS from "../../img/CloudAWS.png"
 import publiccloud from "../../img/Publiccloud.jpg"
 import CloudCommon from "../../img/CloudCommon.png"
-
+import "../../components/layout.css"
 export class Publiccloud extends React.Component {
   constructor(props) {
     super(props)

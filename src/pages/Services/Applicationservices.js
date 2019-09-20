@@ -9,7 +9,7 @@ import Discovery from '../../img/Discovery.png'
 import Office365 from '../../img/Office365.jpg'
 import CheckMark from '../../img/CheckMark.png'
 import ApplicationServicesErp from '../../img/ApplicationServices_Erp.jpg'
-
+import '../../components/layout.css'
 
     export class Applicationservices extends React.Component {
 

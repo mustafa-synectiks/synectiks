@@ -8,6 +8,7 @@ import foundation from "../../img/Foundation.svg"
 import Solutions from "../../img/Solutions.png"
 import Transformation from "../../img/Transformation.png"
 import Microservice from "../../img/Microservice_7.png"
+import "../../components/layout.css"
 
 const Foundation = () => {
   return (

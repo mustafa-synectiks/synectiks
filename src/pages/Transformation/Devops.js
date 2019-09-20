@@ -9,6 +9,7 @@ import Devopsscale from "../../img/Devopsscale.png"
 import Devopssecurity from "../../img/Devopssecurity.png"
 import Devopsspeed from "../../img/Devopsspeed.png"
 import devops from "../../img/Devops.png"
+import "../../components/layout.css"
 
 export class Devops extends React.Component {
   constructor(props) {
@@ -83,7 +84,7 @@ export class Devops extends React.Component {
     return (
       <Layout>
         <div className="bg-lightgrey">
-          <div className="w-100 py-5 mt-5">
+          <div className="w-100">
             <img
               height="auto"
               width="101%"

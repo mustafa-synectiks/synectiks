@@ -4,6 +4,7 @@ import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
 import cd from "../../../img/DisasterRecovery_Subpage.jpg"
 import cc from "../../../img/CloudCommon.png"
+import "../../../components/layout.css"
 
 const wid = {
   width: "91%",

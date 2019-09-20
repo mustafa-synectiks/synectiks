@@ -8,6 +8,7 @@ import fd from "../../img/Foundation.svg"
 import tr from "../../img/transformation_2.png"
 import rm from "../../img/Redevelopment.jpg"
 import ba from "../../img/Enterprise-Platform.png"
+import "../../components/layout.css"
 
 export class Migrations extends React.Component {
   componentDidMount() {

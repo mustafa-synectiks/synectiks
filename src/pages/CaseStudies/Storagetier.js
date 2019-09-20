@@ -1,13 +1,13 @@
 import * as React from "react"
 import st from "../../img/StorageTier_CS.jpg"
 import Layout from "../../components/layout"
+import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 
 export class Storagetier extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }
