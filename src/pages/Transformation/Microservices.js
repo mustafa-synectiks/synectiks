@@ -2,9 +2,9 @@ import * as React from "react"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
-import mm from "../../img/monovsmicro.png"
-import ms from "../../img/Microservice_1.png"
-import mcs from "../../img/Microservicesmain.jpg"
+import mm from "../../images/monovsmicro.png"
+import ms from "../../images/Microservice_1.png"
+import mcs from "../../images/Microservicesmain.jpg"
 import "../../components/layout.css"
 // const wid = {
 //   width: "91%",

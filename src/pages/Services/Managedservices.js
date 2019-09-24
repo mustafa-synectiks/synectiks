@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import ManagedServices from "../../img/ManagedServices.jpg"
+import ManagedServices from "../../images/ManagedServices.jpg"
 import "../../components/layout.css"
 export class Managedservices extends React.Component {
   componentDidMount() {

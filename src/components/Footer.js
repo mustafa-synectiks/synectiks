@@ -47,7 +47,12 @@ export class Footer extends React.Component {
                 <br /> Sales: +1 (609) 608-0429 X 102 <br /> Office: +1 (609)
                 608-0429
               </small>
-              <br />{" "}
+              <br />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0341342304914!2d-74.63367698460706!3d40.31939997937661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086f7514f:0x8f04ec41f160a353!2s300+Alexander+Park+Dr+%2523215,+Princeton,+NJ+08540,+USA!5e0!3m2!1sen!2sin!4v1526621065289"
+                width="400"
+                height="200"
+              ></iframe>
             </div>
           </div>
 
@@ -62,9 +67,15 @@ export class Footer extends React.Component {
                 </small>
                 <br />
               </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4440.05246423676!2d78.38360688659336!3d17.44976444478465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0xe42e01dc290742d4!2sSYNECTIKS!5e0!3m2!1sen!2sin!4v1562662406345!5m2!1sen!2sin"
+                width="400"
+                height="200"
+              ></iframe>
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     )
   }

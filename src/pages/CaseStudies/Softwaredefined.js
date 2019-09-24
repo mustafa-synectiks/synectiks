@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import lc from "../../img/LargeMotorCompany.jpg"
+import lc from "../../images/LargeMotorCompany.jpg"
 import "../../components/layout.css"
 
 const brdr = {

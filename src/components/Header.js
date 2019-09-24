@@ -2,20 +2,20 @@ import React from "react"
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"
 import { FaBars } from "react-icons/fa"
 import Topbar from "./Topbar"
-import logo from "../img/logo.png"
+import logo from "../images/logo.png"
 
 const z = {
-  zIndex: "9999",
+  zIndex: "9999 !important",
 }
 
 const Header = () => {
   return (
-    <div>
+    <div className="FixedHeader">
       <div className="container d-flex justify-content-between mt-3">
         <div></div>
         <Topbar />
       </div>
-      <Navbar expand="lg" className={z}>
+      <Navbar expand="lg" className="z">
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="synectiks" />

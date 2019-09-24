@@ -95,11 +95,11 @@ const Layout = ({ children }) => {
     })
   })
   return (
-    <main>
+    <div>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </main>
+    </div>
   )
 }
 

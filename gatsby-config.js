@@ -41,21 +41,29 @@ module.exports = {
 
   // pathPrefix: "https://mustafa-synectiks.github.io/synectiks-website/",
   plugins: [
+    `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `img`,
-        path: `${__dirname}/src/img`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Synectiks`,
+        short_name: `synectiks`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

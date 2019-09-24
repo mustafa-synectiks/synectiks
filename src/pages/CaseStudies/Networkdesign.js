@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import nd from "../../img/NetworkDesign_CS.jpg"
+import nd from "../../images/NetworkDesign_CS.jpg"
 import "../../components/layout.css"
 
 const brdr = {

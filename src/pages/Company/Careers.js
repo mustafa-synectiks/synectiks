@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import Layout from '../../components/layout'
-import career from '../../img/Careers.jpg'
+import career from '../../images/Careers.jpg'
 import '../../components/layout.css'
 
 export class Careers extends React.Component {

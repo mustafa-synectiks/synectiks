@@ -2,8 +2,8 @@ import * as React from "react"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
-import privateCloud from "../../img/PrivateCloud.jpg"
-import CloudCommon from "../../img/CloudCommon.png"
+import privateCloud from "../../images/PrivateCloud.jpg"
+import CloudCommon from "../../images/CloudCommon.png"
 import "../../components/layout.css"
 class Privatecloud extends React.Component {
   constructor(props) {

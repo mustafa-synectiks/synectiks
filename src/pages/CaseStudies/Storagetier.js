@@ -1,5 +1,5 @@
 import * as React from "react"
-import st from "../../img/StorageTier_CS.jpg"
+import st from "../../images/StorageTier_CS.jpg"
 import Layout from "../../components/layout"
 import "../../components/layout.css"
 

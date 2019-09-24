@@ -1,10 +1,10 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import Cr from "../../img/Careers.png"
-import FS from "../../img/FeDevOps-Strategies.png"
-import FT from "../../img/FeEnterprise-Transformation.png"
-import FMP from "../../img/FeMicroservice-Platform.png"
-import FP from "../../img/FeOpen-Platform.png"
+import Cr from "../../images/Careers.png"
+import FS from "../../images/FeDevOps-Strategies.png"
+import FT from "../../images/FeEnterprise-Transformation.png"
+import FMP from "../../images/FeMicroservice-Platform.png"
+import FP from "../../images/FeOpen-Platform.png"
 import "../../components/layout.css"
 
 export class Featured extends React.Component {

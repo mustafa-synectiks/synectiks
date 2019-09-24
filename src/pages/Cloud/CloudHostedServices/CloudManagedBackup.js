@@ -2,8 +2,8 @@ import * as React from "react"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
-import cc from "../../../img/CloudCommon.png"
-import cb from "../../../img/CloudBackup2.png"
+import cc from "../../../images/CloudCommon.png"
+import cb from "../../../images/CloudBackup2.png"
 import "../../../components/layout.css"
 export class CloudManagedBackup extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import rjc from "../../img/RelianceJioCasestudy.jpg"
+import rjc from "../../images/RelianceJioCasestudy.jpg"
 import "../../components/layout.css"
 
 const brdr = {

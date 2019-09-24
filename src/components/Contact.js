@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import NiceToMeet from '../img/NiceToMeet.png'
+import NiceToMeet from '../images/NiceToMeet.png'
 
 function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service, otherservice, othersource) {
     // we are going to store errors for all fields

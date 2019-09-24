@@ -2,8 +2,8 @@ import * as React from "react"
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
-import cd from "../../../img/DisasterRecovery_Subpage.jpg"
-import cc from "../../../img/CloudCommon.png"
+import cd from "../../../images/DisasterRecovery_Subpage.jpg"
+import cc from "../../../images/CloudCommon.png"
 import "../../../components/layout.css"
 
 const wid = {

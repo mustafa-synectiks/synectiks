@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import N from "../../img/NetworkServices.jpg"
+import N from "../../images/NetworkServices.jpg"
 import "../../components/layout.css"
 export class Networkservices extends React.Component {
   componentDidMount() {

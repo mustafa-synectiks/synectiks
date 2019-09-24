@@ -2,8 +2,8 @@ import * as React from "react"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
-import HostedInfra from "../../../img/HostedInfra.png"
-import CommonCloud from "../../../img/CloudCommon.png"
+import HostedInfra from "../../../images/HostedInfra.png"
+import CommonCloud from "../../../images/CloudCommon.png"
 import "../../../components/layout.css"
 
 const wid = {

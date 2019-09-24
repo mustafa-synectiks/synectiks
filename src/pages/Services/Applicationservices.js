@@ -1,14 +1,14 @@
 import * as React from "react";
 import Layout from '../../components/layout'
-import ApplicationServices from '../../img/ApplicationServices.jpg'
-import Growth from '../../img/Growth.png'
-import Migration from '../../img/Migration.png'
-import Replatform from '../../img/Replatform.png'
-import Remedition from '../../img/Remedition.png'
-import Discovery from '../../img/Discovery.png'
-import Office365 from '../../img/Office365.jpg'
-import CheckMark from '../../img/CheckMark.png'
-import ApplicationServicesErp from '../../img/ApplicationServices_Erp.jpg'
+import ApplicationServices from '../../images/ApplicationServices.jpg'
+import Growth from '../../images/Growth.png'
+import Migration from '../../images/Migration.png'
+import Replatform from '../../images/Replatform.png'
+import Remedition from '../../images/Remedition.png'
+import Discovery from '../../images/Discovery.png'
+import Office365 from '../../images/Office365.jpg'
+import CheckMark from '../../images/CheckMark.png'
+import ApplicationServicesErp from '../../images/ApplicationServices_Erp.jpg'
 import '../../components/layout.css'
 
     export class Applicationservices extends React.Component {

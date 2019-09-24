@@ -1,6 +1,6 @@
 import * as React from "react"
-import cb from "../../img/Storagemigration.jpg"
-import as from "../../img/Application-Services-Slider.png"
+import cb from "../../images/Storagemigration.jpg"
+import as from "../../images/Application-Services-Slider.png"
 import Layout from "../../components/layout"
 import "../../components/layout.css"
 

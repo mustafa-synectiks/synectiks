@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 
-import SoftwareMigration from "../../img/CS_Software_Migration.jpg"
-import RealtimeMonitoring from "../../img/CS_Realtime_Monitoring.jpg"
-import SoftwareDefinedTransformation from "../../img/CS_SoftwareDefinedTransformation.jpg"
-import NetworkDesign from "../../img/CS_NetworkDesign.jpg"
-import StorageTier from "../../img/CS_StorageTier.jpg"
-import DisasterRecovery from "../../img/CS_DisasterRecovery.jpg"
+import SoftwareMigration from "../../images/CS_Software_Migration.jpg"
+import RealtimeMonitoring from "../../images/CS_Realtime_Monitoring.jpg"
+import SoftwareDefinedTransformation from "../../images/CS_SoftwareDefinedTransformation.jpg"
+import NetworkDesign from "../../images/CS_NetworkDesign.jpg"
+import StorageTier from "../../images/CS_StorageTier.jpg"
+import DisasterRecovery from "../../images/CS_DisasterRecovery.jpg"
 import "../../components/layout.css"
 
 export class Casestudy extends React.Component {
