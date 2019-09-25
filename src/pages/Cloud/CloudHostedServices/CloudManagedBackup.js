@@ -123,7 +123,7 @@ export class CloudManagedBackup extends React.Component {
           <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
             <div className="py-3 col-md-2 nav-item dropdown bg-logoblue brdr025">
               <a
-                href="/HostedInfrastructure.html"
+                href="/HostedInfrastructure"
                 className="text-white noLine"
               >
                 <a
@@ -139,16 +139,16 @@ export class CloudManagedBackup extends React.Component {
                 <div className="dropdown-menu w17em">
                   <a
                     className="dropdown-item"
-                    href="/HostedInfrastructure.html"
+                    href="/HostedInfrastructure"
                   >
                     Hosted Infrastructure
                   </a>
-                  <a className="dropdown-item" href="/CloudManagedBackup.html">
+                  <a className="dropdown-item" href="/CloudManagedBackup">
                     Cloud Managed Backup
                   </a>
                   <a
                     className="dropdown-item"
-                    href="/CloudDisasterRecovery.html"
+                    href="/CloudDisasterRecovery"
                   >
                     Cloud Disaster Recovery
                   </a>
@@ -158,7 +158,7 @@ export class CloudManagedBackup extends React.Component {
 
             <div className="py-3 col-md-2">
               <a
-                href="/privatecloud.html"
+                href="/privatecloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Private Cloud</b>
@@ -166,7 +166,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/hybridcloud.html"
+                href="/hybridcloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Hybrid Cloud</b>
@@ -174,7 +174,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/publiccloud.html"
+                href="/publiccloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Public Cloud</b>
@@ -182,7 +182,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/colocation.html"
+                href="/colocation"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Colocation</b>

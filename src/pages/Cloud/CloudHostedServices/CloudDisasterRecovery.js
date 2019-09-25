@@ -131,7 +131,7 @@ export class CloudDisasterRecovery extends React.Component {
                 <a
                   className="noLine"
                   href="#"
-                  id="cloudnav.html"
+                  id="cloudnav"
                   data-toggle="dropdown"
                 >
                   <span id="hosted">
@@ -141,7 +141,7 @@ export class CloudDisasterRecovery extends React.Component {
                 <div className="dropdown-menu w17em">
                   <a
                     className="dropdown-item"
-                    href="/HostedInfrastructure.html"
+                    href="/HostedInfrastructure"
                   >
                     {" "}
                     Hosted Infrastructure{" "}
@@ -159,7 +159,7 @@ export class CloudDisasterRecovery extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/privatecloud.html"
+                href="/privatecloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Private Cloud</b>
@@ -167,7 +167,7 @@ export class CloudDisasterRecovery extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/hybridcloud.html"
+                href="/hybridcloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Hybrid Cloud</b>
@@ -175,7 +175,7 @@ export class CloudDisasterRecovery extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/publiccloud.html"
+                href="/publiccloud"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Public Cloud</b>
@@ -183,7 +183,7 @@ export class CloudDisasterRecovery extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/colocation.html"
+                href="/colocation"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Colocation</b>

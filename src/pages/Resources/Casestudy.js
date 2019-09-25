@@ -26,7 +26,7 @@ export class Casestudy extends React.Component {
             </div>
 
             <div className="d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col">
-              <a href="/softwaredefined.html" className="noLine">
+              <a href="/softwaredefined" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">
@@ -49,7 +49,7 @@ export class Casestudy extends React.Component {
                   </div>
                 </div>
               </a>
-              <a href="/realtime.html" className="noLine">
+              <a href="/realtime" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">
@@ -72,7 +72,7 @@ export class Casestudy extends React.Component {
                   </div>
                 </div>
               </a>
-              <a href="/storagemigration.html" className="noLine">
+              <a href="/storagemigration" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">
@@ -101,7 +101,7 @@ export class Casestudy extends React.Component {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <a href="/networkdesign.html" className="noLine">
+              <a href="/networkdesign" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">
@@ -124,7 +124,7 @@ export class Casestudy extends React.Component {
                   </div>
                 </div>
               </a>
-              <a href="/storagetier.html" className="noLine">
+              <a href="/storagetier" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">
@@ -143,7 +143,7 @@ export class Casestudy extends React.Component {
                   </div>
                 </div>
               </a>
-              <a href="/disasterrecovery.html" className="noLine">
+              <a href="/disasterrecovery" className="noLine">
                 <div className="p-3">
                   <div className="border-grey-2px cs_boxshadow">
                     <div className="img_zoom">

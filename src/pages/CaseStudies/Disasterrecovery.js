@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import ds from "../../images/DisasterRecovery_Subpage2.jpg"
+// import ds from "../../images/DisasterRecovery_Subpage2.jpg"
 import "../../components/layout.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -10,16 +10,32 @@ const brdr = {
 }
 
 const Disasterrecovery = () => {
+  const data = useStaticQuery(graphql`
+    {
+      image: file(relativePath: { eq: "DisasterRecovery_Subpage2.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log(data)
   return (
     <Layout>
       <div className="bg-lightgrey">
         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
           <div className="pt-5 pb-3">
-            <img src={ds} width="100%" alt="Cloud Backup" />
+            {/* <img src={ds} width="100%" alt="Cloud Backup" /> */}
+            <Img
+              fluid={data.image.childImageSharp.fluid}
+              alt="Disaster Recovery"
+            />
           </div>
         </div>
         <div className="pb-3">
-          <a href="/casestudy.html">
+          <a href="/casestudy">
             <button
               className="btn text-white bg-logoblue btnLearn"
               style={brdr}

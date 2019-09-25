@@ -23,7 +23,7 @@ class Storagemigration extends React.Component {
             </div>
           </div>
           <div>
-            <a href="/casestudy.html">
+            <a href="/casestudy">
               <button
                 className="btn text-white bg-logoblue btnLearn"
                 style={brdr}

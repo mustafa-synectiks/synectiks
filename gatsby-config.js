@@ -32,6 +32,7 @@
 //     // `gatsby-plugin-offline`,
 //   ],
 // }
+const siteAddress = new URL("https://techcraft.synectiks.com/")
 module.exports = {
   siteMetadata: {
     title: `Synectiks | Enterprise Devops`,
@@ -59,6 +60,15 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "gatsby-synectiks",
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

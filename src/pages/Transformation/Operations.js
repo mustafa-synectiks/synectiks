@@ -24,7 +24,7 @@ class Operations extends React.Component {
             <div className="row main-card pb-5">
               <div className="col-md-12   card-deck">
                 <div className="card btn card-shadow mx-3">
-                  <a href="/foundation.html" className="noLine">
+                  <a href="/foundation" className="noLine">
                     <img
                       className="card-img-top"
                       src={OpenPlatform}
@@ -39,7 +39,7 @@ class Operations extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/transformation.html" className="noLine">
+                  <a href="/transformation" className="noLine">
                     <img
                       className="card-img-top"
                       src={transformation}
@@ -54,7 +54,7 @@ class Operations extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/operations.html" className="noLine">
+                  <a href="/operations" className="noLine">
                     <img
                       className="card-img-top"
                       src={Solutions}
