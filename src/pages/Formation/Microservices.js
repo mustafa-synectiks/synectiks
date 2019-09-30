@@ -1,11 +1,12 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
 import mm from "../../images/monovsmicro.png"
 import ms from "../../images/Microservice_1.png"
 import mcs from "../../images/Microservicesmain.jpg"
-import "../../components/layout.css"
+
 // const wid = {
 //   width: "91%",
 // }
@@ -93,16 +94,16 @@ export class Microservices extends React.Component {
             />
 
             <div className="sidenav mt-5">
-              <a to="/microserviceexample" className="text-white">
+              <a to="/microserviceexample/index.html" className="text-white">
                 Example&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicebenefit" className="text-white">
+              <a to="/microservicebenefit/index.html" className="text-white">
                 Benefits&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicechallenge" className="text-white">
+              <a to="/microservicechallenge/index.html" className="text-white">
                 Challenges&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicehelp" className="text-white">
+              <a to="/microservicehelp/index.html" className="text-white">
                 How&nbsp;we&nbsp;can help you?
               </a>
             </div>
@@ -186,6 +187,19 @@ export class Microservices extends React.Component {
             </div>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

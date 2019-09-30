@@ -1,41 +1,42 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
-// import ds from "../../images/DisasterRecovery_Subpage2.jpg"
-import "../../components/layout.css"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import ds from "../../images/DisasterRecovery_Subpage2.jpg"
+
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
 
 const Disasterrecovery = () => {
-  const data = useStaticQuery(graphql`
-    {
-      image: file(relativePath: { eq: "DisasterRecovery_Subpage2.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  console.log(data)
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     image: file(relativePath: { eq: "DisasterRecovery_Subpage2.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: "900") {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // console.log(data)
   return (
     <Layout>
       <div className="bg-lightgrey">
         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
           <div className="pt-5 pb-3">
-            {/* <img src={ds} width="100%" alt="Cloud Backup" /> */}
-            <Img
-              fluid={data.image.childImageSharp.fluid}
+            <img src={ds} width="100%" alt="Cloud Backup" />
+            {/* <Img
+              fixed={data.image.childImageSharp.fixed}
               alt="Disaster Recovery"
-            />
+            /> */}
           </div>
         </div>
         <div className="pb-3">
-          <a href="/casestudy">
+          <a href="/casestudy/index.html">
             <button
               className="btn text-white bg-logoblue btnLearn"
               style={brdr}
@@ -162,6 +163,19 @@ const Disasterrecovery = () => {
           </p>
         </div>
       </div>
+      <Helmet>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+          }}
+        />
+      </Helmet>
     </Layout>
   )
 }

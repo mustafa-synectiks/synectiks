@@ -1,4 +1,5 @@
-import * as React from "react";
+import * as React from "react"
+import { Helmet } from "react-helmet";
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import Layout from '../../components/layout'
 import career from '../../images/Careers.jpg'
@@ -56,25 +57,25 @@ export class Careers extends React.Component {
                         What’s your passion?<br />
                         <div className="col-lg-12 d-flex flex-col">
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Data &amp; Analytics</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Data &amp; Analytics</a >
                             </div>
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Design &amp; UX</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Design &amp; UX</a >
                             </div>
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Engineering&amp;Technology</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Engineering&amp;Technology</a >
                             </div>
                         </div>
 
                         <div className="col-lg-12 d-flex flex-col">
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Internships</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Internships</a >
                             </div>
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Sales&amp;Marketing</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Sales&amp;Marketing</a >
                             </div>
                             <div className="pt-3 col-sm-4 px-4" >
-                                <a  className="navlink navfont noLine" href="/contactus">Software Development</a >
+                                <a  className="navlink navfont noLine" href="/contactus/index.html">Software Development</a >
                             </div>
                         </div>
                     </p>
@@ -188,6 +189,19 @@ export class Careers extends React.Component {
                     <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
                 </div>
                 </div>
+                <Helmet>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+                        }}
+                    />
+                </Helmet>
             </Layout>
         );
     }

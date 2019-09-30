@@ -1,7 +1,7 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
 import rjc from "../../images/RelianceJioCasestudy.jpg"
-import "../../components/layout.css"
 
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
@@ -21,7 +21,7 @@ class Realtime extends React.Component {
             </div>
           </div>
           <div>
-            <a href="/casestudy">
+            <a href="/casestudy/index.html">
               <button
                 className="btn text-white bg-logoblue btnLearn"
                 style={brdr}
@@ -154,6 +154,19 @@ class Realtime extends React.Component {
             </p>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

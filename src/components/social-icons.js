@@ -1,9 +1,5 @@
 import React from "react"
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaLinkedin,
-} from "react-icons/fa"
+import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa"
 
 const tweet = {
   color: "#38A1F3",
@@ -24,14 +20,14 @@ const lin = {
 export default [
   {
     icon: <FaFacebookSquare style={fb} />,
-    url: "https://fb.com",
+    url: "https://www.facebook.com/synectikscloud/",
   },
   {
     icon: <FaTwitterSquare style={tweet} />,
-    url: "https://twitter.com",
+    url: "https://twitter.com/synectiks",
   },
   {
     icon: <FaLinkedin style={lin} />,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/company/synectiks/",
   },
 ]

@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
     $(document).ready(function() {
       $(function() {
         $(".dropdown-item").on("click", function(e) {
-          $(".nav-item .nav-link").removeClass("active")
+          $(".nav-item .nav-link").addeClass("active")
           $(this)
             .parents(".nav-item")
             .find(".nav-link")

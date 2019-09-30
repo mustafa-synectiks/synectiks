@@ -5,121 +5,129 @@ module.exports = [
     component: path.resolve(`src/pages/index.js`),
   },
   {
-    path: "/devops",
-    component: path.resolve(`src/pages/Transformation/Devops.js`),
+    path: "/audit/index.html",
+    component: path.resolve(`src/pages/Formation/Audit.js`),
   },
   {
-    path: "/foundation",
-    component: path.resolve(`src/pages/Transformation/Foundation.js`),
+    path: "/devops/index.html",
+    component: path.resolve(`src/pages/Formation/Devops.js`),
   },
   {
-    path: "/microservices",
-    component: path.resolve(`src/pages/Transformation/Microservices.js`),
+    path: "/foundation/index.html",
+    component: path.resolve(`src/pages/Formation/Foundation.js`),
   },
   {
-    path: "/transformation",
-    component: path.resolve(`src/pages/Transformation/Transformation.js`),
+    path: "/microservices/index.html",
+    component: path.resolve(`src/pages/Formation/Microservices.js`),
   },
   {
-    path: "/operations",
-    component: path.resolve(`src/pages/Transformation/Operations.js`),
+    path: "/transformation/index.html",
+    component: path.resolve(`src/pages/Formation/Transformation.js`),
   },
   {
-    path: "/migrations",
-    component: path.resolve(`src/pages/Transformation/Migrations.js`),
+    path: "/operations/index.html",
+    component: path.resolve(`src/pages/Formation/Operations.js`),
   },
   {
-    path: "/HostedInfrastructure",
+    path: "/migrations/index.html",
+    component: path.resolve(`src/pages/Formation/Migrations.js`),
+  },
+  {
+    path: "/HostedInfrastructure/index.html",
     component: path.resolve(
       `src/pages/Cloud/CloudHostedServices/HostedInfrastructure.js`
     ),
   },
   {
-    path: "/CloudManagedBackup",
+    path: "/CloudManagedBackup/index.html",
     component: path.resolve(
       `src/pages/Cloud/CloudHostedServices/CloudManagedBackup.js`
     ),
   },
   {
-    path: "/CloudDisasterRecovery",
+    path: "/CloudDisasterRecovery/index.html",
     component: path.resolve(
       `src/pages/Cloud/CloudHostedServices/CloudDisasterRecovery.js`
     ),
   },
   {
-    path: "/privatecloud",
+    path: "/privatecloud/index.html",
     component: path.resolve(`src/pages/Cloud/Privatecloud.js`),
   },
   {
-    path: "/hybridcloud",
+    path: "/hybridcloud/index.html",
     component: path.resolve(`src/pages/Cloud/Hybridcloud.js`),
   },
   {
-    path: "/publiccloud",
+    path: "/publiccloud/index.html",
     component: path.resolve(`src/pages/Cloud/Publiccloud.js`),
   },
   {
-    path: "/colocation",
+    path: "/colocation/index.html",
     component: path.resolve(`src/pages/Cloud/Colocation.js`),
   },
   {
-    path: "/applicationservices",
+    path: "/applicationservices/index.html",
     component: path.resolve(`src/pages/Services/Applicationservices.js`),
   },
   {
-    path: "/managedservices",
+    path: "/managedservices/index.html",
     component: path.resolve(`src/pages/Services/Managedservices.js`),
   },
   {
-    path: "/networkservices",
+    path: "/networkservices/index.html",
     component: path.resolve(`src/pages/Services/Networkservices.js`),
   },
   {
-    path: "/casestudy",
+    path: "/casestudy/index.html",
     component: path.resolve(`src/pages/Resources/Casestudy.js`),
   },
   {
-    path: "/featured",
+    path: "/featured/index.html",
     component: path.resolve(`src/pages/Resources/Featured.js`),
   },
   {
-    path: "/about",
+    path: "/about/index.html",
     component: path.resolve(`src/pages/Company/Aboutus.js`),
   },
   {
-    path: "/careers",
+    path: "/careers/index.html",
     component: path.resolve(`src/pages/Company/Careers.js`),
   },
   {
-    path: "/askfordemo",
+    path: "/askfordemo/index.html",
     component: path.resolve(`src/pages/Mails/Askdemo.js`),
   },
   {
-    path: "/contactus",
+    path: "/contactus/index.html",
     component: path.resolve(`src/pages/Mails/Contact.js`),
   },
   {
-    path: "/realtime",
+    path: "/realtime/index.html",
     component: path.resolve(`src/pages/CaseStudies/Realtime.js`),
   },
   {
-    path: "/networkdesign",
+    path: "/networkdesign/index.html",
     component: path.resolve(`src/pages/CaseStudies/Networkdesign.js`),
   },
   {
-    path: "/disasterrecovery",
+    path: "/disasterrecovery/index.html",
     component: path.resolve(`src/pages/CaseStudies/Disasterrecovery.js`),
   },
   {
-    path: "/storagetier",
+    path: "/storagetier/index.html",
     component: path.resolve(`src/pages/CaseStudies/Storagetier.js`),
   },
   {
-    path: "/storagemigration",
+    path: "/storagemigration/index.html",
     component: path.resolve(`src/pages/CaseStudies/Storagemigration.js`),
   },
   {
-    path: "/softwaredefined",
+    path: "/softwaredefined/index.html",
     component: path.resolve(`src/pages/CaseStudies/Softwaredefined.js`),
+  },
+  {
+    path: "/VsForm/index.html",
+    component: path.resolve(`src/pages/Mails/VisualForm.js`),
   },
 ]

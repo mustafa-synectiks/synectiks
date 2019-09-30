@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
 import OpenPlatform from "../../images/OpenPlatform.png"
 import Rehost from "../../images/Rehost.png"
@@ -8,13 +9,9 @@ import Solutions from "../../images/Solutions.png"
 import transformation from "../../images/Transformation.png"
 import Refactor from "../../images/Refactor.png"
 import transformation2 from "../../images/transformation_2.png"
-import "../../components/layout.css"
+// import "../../components/layout.css"
 
-export class Transformation extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-
+export class Tformation extends React.Component {
   render() {
     return (
       <Layout>
@@ -23,7 +20,7 @@ export class Transformation extends React.Component {
             <div className="row main-card pb-5">
               <div className="col-md-12   card-deck">
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/foundation" className="noLine">
+                  <a href="/foundation/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={OpenPlatform}
@@ -38,7 +35,7 @@ export class Transformation extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/transformation" className="noLine">
+                  <a href="/transformation/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={transformation}
@@ -54,7 +51,7 @@ export class Transformation extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/operations" className="noLine">
+                  <a href="/operations/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={Solutions}
@@ -115,8 +112,21 @@ export class Transformation extends React.Component {
             </div>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }
 }
-export default Transformation
+export default Tformation

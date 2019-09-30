@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import ModalContact from "../../components/ModalContact"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import Layout from "../../components/layout"
@@ -9,7 +10,6 @@ import Devopsscale from "../../images/Devopsscale.png"
 import Devopssecurity from "../../images/Devopssecurity.png"
 import Devopsspeed from "../../images/Devopsspeed.png"
 import devops from "../../images/Devops.png"
-import "../../components/layout.css"
 
 export class Devops extends React.Component {
   constructor(props) {
@@ -430,6 +430,19 @@ export class Devops extends React.Component {
             </Modal>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

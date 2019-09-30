@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
 import Cr from "../../images/Careers.png"
 import FS from "../../images/FeDevOps-Strategies.png"
@@ -42,7 +43,7 @@ export class Featured extends React.Component {
                       Strategies.{" "}
                     </h6>
                     <a
-                      href="doc/Synectiks-Enterprise-DevOps-Strategies.pdf"
+                      href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-DevOps-Strategies.pdf"
                       target="_blank"
                     >
                       Learn more <i className="fa fa-arrow-right" />
@@ -67,7 +68,7 @@ export class Featured extends React.Component {
                       service sector.{" "}
                     </h6>
                     <a
-                      href="doc/Synectiks-Enterprise-Transformation.pdf"
+                      href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-Transformation.pdf"
                       target="_blank"
                     >
                       Learn more <i className="fa fa-arrow-right" />
@@ -93,7 +94,7 @@ export class Featured extends React.Component {
                       </h6>
 
                       <a
-                        href="doc/Synectiks-Microservice-Platform.pdf"
+                        href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Microservice-Platform.pdf"
                         target="_blank"
                       >
                         Learn more <i className="fa fa-arrow-right" />
@@ -115,7 +116,10 @@ export class Featured extends React.Component {
                         transformation project @50% cost &amp; Time.
                       </h6>
 
-                      <a href="doc/Synectiks-Open-Platform.pdf" target="_blank">
+                      <a
+                        href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Open-Platform.pdf"
+                        target="_blank"
+                      >
                         Learn more <i className="fa fa-arrow-right" />
                       </a>
                     </div>
@@ -125,6 +129,19 @@ export class Featured extends React.Component {
             </div>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

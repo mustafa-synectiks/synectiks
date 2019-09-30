@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../../components/ModalContact"
 import Layout from "../../../components/layout"
@@ -123,7 +124,7 @@ export class CloudManagedBackup extends React.Component {
           <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
             <div className="py-3 col-md-2 nav-item dropdown bg-logoblue brdr025">
               <a
-                href="/HostedInfrastructure"
+                href="/HostedInfrastructure/index.html"
                 className="text-white noLine"
               >
                 <a
@@ -139,7 +140,7 @@ export class CloudManagedBackup extends React.Component {
                 <div className="dropdown-menu w17em">
                   <a
                     className="dropdown-item"
-                    href="/HostedInfrastructure"
+                    href="/HostedInfrastructure/index.html"
                   >
                     Hosted Infrastructure
                   </a>
@@ -148,7 +149,7 @@ export class CloudManagedBackup extends React.Component {
                   </a>
                   <a
                     className="dropdown-item"
-                    href="/CloudDisasterRecovery"
+                    href="/CloudDisasterRecovery/index.html"
                   >
                     Cloud Disaster Recovery
                   </a>
@@ -158,7 +159,7 @@ export class CloudManagedBackup extends React.Component {
 
             <div className="py-3 col-md-2">
               <a
-                href="/privatecloud"
+                href="/privatecloud/index.html"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Private Cloud</b>
@@ -166,7 +167,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/hybridcloud"
+                href="/hybridcloud/index.html"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Hybrid Cloud</b>
@@ -174,7 +175,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/publiccloud"
+                href="/publiccloud/index.html"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Public Cloud</b>
@@ -182,7 +183,7 @@ export class CloudManagedBackup extends React.Component {
             </div>
             <div className="py-3 col-md-2">
               <a
-                href="/colocation"
+                href="/colocation/index.html"
                 className="text-logoblue bg-white noLine"
               >
                 <b>Colocation</b>
@@ -347,6 +348,19 @@ export class CloudManagedBackup extends React.Component {
             <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

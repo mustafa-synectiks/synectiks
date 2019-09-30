@@ -1,10 +1,11 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../components/ModalContact"
 import Layout from "../../components/layout"
 import privateCloud from "../../images/PrivateCloud.jpg"
 import CloudCommon from "../../images/CloudCommon.png"
-import "../../components/layout.css"
+
 class Privatecloud extends React.Component {
   constructor(props) {
     super(props)
@@ -79,7 +80,7 @@ class Privatecloud extends React.Component {
           <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
             <div className="py-3 col-md-2 nav-item dropdown">
               <a
-                href="/HostedInfrastructure"
+                href="/HostedInfrastructure/index.html"
                 className="text-logoblue bg-white noLine"
               >
                 <a className="noLine" href="#" id="" data-toggle="dropdown">
@@ -88,13 +89,22 @@ class Privatecloud extends React.Component {
                   </b>
                 </a>
                 <div className="dropdown-menu w17em">
-                  <a className="dropdown-item" href="/HostedInfrastructure">
+                  <a
+                    className="dropdown-item"
+                    href="/HostedInfrastructure/index.html"
+                  >
                     Hosted Infrastructure
                   </a>
-                  <a className="dropdown-item" href="/CloudManagedBackup">
+                  <a
+                    className="dropdown-item"
+                    href="/CloudManagedBackup/index.html"
+                  >
                     Cloud Managed Backup
                   </a>
-                  <a className="dropdown-item" href="/CloudDisasterRecovery">
+                  <a
+                    className="dropdown-item"
+                    href="/CloudDisasterRecovery/index.html"
+                  >
                     Cloud Disaster Recovery
                   </a>
                 </div>
@@ -103,7 +113,7 @@ class Privatecloud extends React.Component {
 
             <div className="py-3 col-md-2  bg-logoblue brdr025">
               <a
-                href="/privatecloud"
+                href="/privatecloud/index.html"
                 id="private"
                 className="text-white noLine"
               >
@@ -111,17 +121,26 @@ class Privatecloud extends React.Component {
               </a>
             </div>
             <div className="py-3 col-md-2">
-              <a href="/hybridcloud" className="text-logoblue bg-white noLine">
+              <a
+                href="/hybridcloud/index.html"
+                className="text-logoblue bg-white noLine"
+              >
                 <b>Hybrid Cloud</b>
               </a>
             </div>
             <div className="py-3 col-md-2">
-              <a href="/publiccloud" className="text-logoblue bg-white noLine">
+              <a
+                href="/publiccloud/index.html"
+                className="text-logoblue bg-white noLine"
+              >
                 <b>Public Cloud</b>
               </a>
             </div>
             <div className="py-3 col-md-2">
-              <a href="/colocation" className="text-logoblue bg-white noLine">
+              <a
+                href="/colocation/index.html"
+                className="text-logoblue bg-white noLine"
+              >
                 <b>Colocation</b>
               </a>
             </div>
@@ -257,6 +276,19 @@ class Privatecloud extends React.Component {
             <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }

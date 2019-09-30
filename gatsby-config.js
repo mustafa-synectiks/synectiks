@@ -1,46 +1,9 @@
-// module.exports = {
-//   siteMetadata: {
-//     title: `Gatsby Default Starter`,
-//     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-//     author: `@gatsbyjs`,
-//   },
-//   plugins: [
-//     `gatsby-plugin-react-helmet`,
-//     {
-//       resolve: `gatsby-source-filesystem`,
-//       options: {
-//         name: `images`,
-//         path: `${__dirname}/src/images`,
-//       },
-//     },
-//     `gatsby-transformer-sharp`,
-//     `gatsby-plugin-sharp`,
-//     {
-//       resolve: `gatsby-plugin-manifest`,
-//       options: {
-//         name: `gatsby-starter-default`,
-//         short_name: `starter`,
-//         start_url: `/`,
-//         background_color: `#663399`,
-//         theme_color: `#663399`,
-//         display: `minimal-ui`,
-//         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-//       },
-//     },
-//     // this (optional) plugin enables Progressive Web App + Offline functionality
-//     // To learn more, visit: https://gatsby.dev/offline
-//     // `gatsby-plugin-offline`,
-//   ],
-// }
-const siteAddress = new URL("https://techcraft.synectiks.com/")
 module.exports = {
   siteMetadata: {
     title: `Synectiks | Enterprise Devops`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Synectiks | Enterprise Devops`,
+    author: `Synectiks`,
   },
-
-  // pathPrefix: "https://mustafa-synectiks.github.io/synectiks-website/",
   plugins: [
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-react-helmet`,
@@ -63,9 +26,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "gatsby-synectiks",
-        protocol: siteAddress.protocol.slice(0, -1),
-        hostname: siteAddress.hostname,
+        bucketName: "synectiks-latest-website",
+        protocol: "https",
+        hostname: "synectiks.com",
       },
     },
 
@@ -78,7 +41,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/favicon/android-icon-36x36.png`, // This path is relative to the root of the site.
+        icon: `src/favicon/android-icon-36x36.png`,
+        // This path is relative to the root of the site.
       },
     },
     {
@@ -88,8 +52,6 @@ module.exports = {
         path: `${__dirname}/src/routes.js`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-meta-redirect`,
   ],
 }

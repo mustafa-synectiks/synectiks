@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
 import ContinuousAutomationOperations from "../../images/ContinuousAutomationOperations.png"
 import ContinuousDeliveryOperations from "../../images/ContinuousDeliveryOperations.png"
@@ -9,7 +10,6 @@ import OperationsGraph from "../../images/OperationsGraph.png"
 import Solutions from "../../images/Solutions.png"
 import transformation from "../../images/Transformation.png"
 import OpenPlatform from "../../images/OpenPlatform.png"
-import "../../components/layout.css"
 
 class Operations extends React.Component {
   componentDidMount() {
@@ -24,7 +24,7 @@ class Operations extends React.Component {
             <div className="row main-card pb-5">
               <div className="col-md-12   card-deck">
                 <div className="card btn card-shadow mx-3">
-                  <a href="/foundation" className="noLine">
+                  <a href="/foundation/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={OpenPlatform}
@@ -39,7 +39,7 @@ class Operations extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/transformation" className="noLine">
+                  <a href="/transformation/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={transformation}
@@ -54,7 +54,7 @@ class Operations extends React.Component {
                 </div>
 
                 <div className="card btn card-shadow mx-3 pt-3">
-                  <a href="/operations" className="noLine">
+                  <a href="/operations/index.html" className="noLine">
                     <img
                       className="card-img-top"
                       src={Solutions}
@@ -186,6 +186,19 @@ class Operations extends React.Component {
             </div>
           </div>
         </div>
+        <Helmet>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `,
+            }}
+          />
+        </Helmet>
       </Layout>
     )
   }
