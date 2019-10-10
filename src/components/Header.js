@@ -39,22 +39,18 @@ const Header = () => {
                   Microservices Transformation
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Cloud" id="basic-nav-dropdown">
-                <NavDropdown
-                  title="Cloud Hosted Services"
-                  id="basic-nav-dropdown"
-                  className="dropdown-submenu dropright"
-                >
-                  <NavDropdown.Item href="/HostedInfrastructure/index.html">
-                    Hosted Infrastructure
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/CloudManagedBackup/index.html">
-                    Cloud Managed Backup
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/CloudDisasterRecovery/index.html">
-                    Cloud Disaster Recovery
-                  </NavDropdown.Item>
-                </NavDropdown>
+              <NavDropdown title="Hosted Services" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/HostedInfrastructure/index.html">
+                  Hosted Infrastructure
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/CloudManagedBackup/index.html">
+                  Cloud Managed Backup
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/CloudDisasterRecovery/index.html">
+                  Cloud Disaster Recovery
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Cloud Solutions" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/privatecloud/index.html">
                   Private Cloud
                 </NavDropdown.Item>

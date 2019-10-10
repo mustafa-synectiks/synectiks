@@ -29,7 +29,7 @@ export class Migrations extends React.Component {
             />
           </div>
 
-          <div className="px-5">
+          <div className="px-5 mt-4">
             <p className="lineHeight-24">
               Synectiks accelerated migration allows customer to leverage the
               data processing benefits of cloud sooner, providing cost-savings

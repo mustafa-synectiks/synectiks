@@ -6,9 +6,8 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         {/* <!-- Bootstrap --> */}
         <link
           rel="stylesheet"
@@ -43,6 +42,8 @@ export default function HTML(props) {
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
           crossOrigin="anonymous"
         />
+
+        <script src="https://synectiks-website.s3.amazonaws.com/validation.js" />
         {/* <!-- Bootstrap --> */}
         {props.headComponents}
       </head>

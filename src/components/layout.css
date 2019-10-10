@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 main {
-  margin-top: 6.5rem;
+  margin-top: 5.8rem;
 }
 .carousel-control-next {
   right: -3% !important;
@@ -25,7 +25,7 @@ main {
 }
 a.dropdown-toggle.nav-link {
   color: #007cc2 !important;
-  margin-left: 2rem;
+  margin-left: 1rem;
   font-size: 1.3rem;
 }
 .FixedHeader {
@@ -36,6 +36,7 @@ a.dropdown-toggle.nav-link {
   right: 0;
   left: 0;
   background: white;
+  box-shadow: 0px 0px 5px lightgrey;
 }
 .z {
   z-index: 9999 !important;
@@ -1075,7 +1076,7 @@ h6 {
   right: 50%;
   top: 0;
   background: #ecf0f1;
-  height: 2px;
+  height: auto;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -1705,4 +1706,112 @@ textarea.has-error {
     margin: 0;
     border-width: 1px;
   }
+}
+/* Form */
+form {
+  /* background: #F3F5F7/; */
+  width: 100%;
+  margin: 0px auto;
+  padding: 1rem 3rem 0rem 3rem;
+  border-radius: 5px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #425163;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #777;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007cc2;
+}
+
+input.has-error,
+select.has-error,
+textarea.has-error {
+  border-color: #f26969;
+}
+
+.error,
+.errormb,
+.errorc,
+.errorct,
+.errorml,
+.errorms,
+.errormss {
+  color: #f26969;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.src,
+.inds {
+  display: none;
+}
+
+.des {
+  display: block;
+}
+.pos-3 {
+  position: relative;
+  top: 37%;
+}
+/* Form */
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 1100px;
+  }
+}
+.fpt {
+  padding-top: 4rem !important;
+  margin-top: -1rem !important;
+}
+.Hshow {
+  padding: 1rem;
+  width:100px;
+  height:45vh;
+      background: white !important;
+    z-index: 999;
+    box-shadow: 0px 1px 3px;
+  -webkit-transition: width 1s; /* Safari */
+  transition: width 1s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+}
+/* .Hshow:hover {
+  padding: 1rem;
+} */
+/* .hideshow {
+  display: none;
+} */
+/* .Hshow:hover .hideshow {
+  display: block;
+  background-color: orangered;
+} */
+.hPtabs{
+  w:85vw;
+  position:absolute !important;
+  left:3.5rem !important;
 }

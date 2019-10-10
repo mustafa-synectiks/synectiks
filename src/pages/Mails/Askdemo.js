@@ -6,18 +6,20 @@ import Layout from "../../components/layout"
 import NiceToMeet from "../../images/NiceToMeet.png"
 import "../../components/layout.css"
 import ContactM from "../../components/ContactMe"
-
+const s = {
+  textAlign: "center",
+  marginTop: "2rem",
+  marginBottom: "2rem",
+}
+const h = {
+  paddingTop: "2rem",
+}
 export class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <div>
-          <img
-            className="text-center"
-            src={NiceToMeet}
-            width="100%"
-            alt="Card image Foundation"
-          />
+        <div style={s}>
+          <h1 style={h}>Ask For Demo</h1>
         </div>
         <ContactM />
 

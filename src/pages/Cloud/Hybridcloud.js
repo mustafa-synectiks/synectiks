@@ -2,9 +2,24 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 import { Modal, ModalHeader, ModalBody } from "reactstrap"
 import ModalContact from "../../components/ModalContact"
+import { FiAlignLeft } from "react-icons/fi"
 import Layout from "../../components/layout"
 import CloudCommon from "../../images/CloudCommon.png"
 import HybridCloud from "../../images/HybridCloud.jpg"
+import {
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
+  Col,
+} from "reactstrap"
+import classnames from "classnames"
 
 export class Hybridcloud extends React.Component {
   constructor(props) {
@@ -14,14 +29,22 @@ export class Hybridcloud extends React.Component {
       modal: false,
       fields: {},
       errors: {},
+      activeTab: "",
     }
 
     this.toggle = this.toggle.bind(this)
   }
-  toggle() {
+  toggle(Modal) {
     this.setState(prevState => ({
       modal: !prevState.modal,
     }))
+  }
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab,
+      })
+    }
   }
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -184,7 +207,6 @@ export class Hybridcloud extends React.Component {
               cloud solutions without compromising your security.
             </h5>
           </div>
-
           <div
             className="container-fluid px-5 pt-3"
             data-aos="fade-up"
@@ -230,6 +252,11 @@ export class Hybridcloud extends React.Component {
               </div>
             </div>
           </div>
+          <div
+            className="container-fluid px-5 pt-3"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          ></div>
           <div className="w-100 p-5 text-black text-justify">
             <p className="lineHeight-24">
               Begin your journey with SYNECTIKS Hybrid Cloud.

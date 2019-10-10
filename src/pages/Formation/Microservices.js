@@ -94,16 +94,19 @@ export class Microservices extends React.Component {
             />
 
             <div className="sidenav mt-5">
-              <a to="/microserviceexample/index.html" className="text-white">
+              <a href="/microserviceexample/index.html" className="text-white">
                 Example&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicebenefit/index.html" className="text-white">
+              <a href="/microservicebenefit/index.html" className="text-white">
                 Benefits&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicechallenge/index.html" className="text-white">
+              <a
+                href="/microservicechallenge/index.html"
+                className="text-white"
+              >
                 Challenges&nbsp;of&nbsp;Microservices
               </a>
-              <a to="/microservicehelp/index.html" className="text-white">
+              <a href="/microservicehelp/index.html" className="text-white">
                 How&nbsp;we&nbsp;can help you?
               </a>
             </div>

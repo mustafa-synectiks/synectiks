@@ -21,6 +21,26 @@ module.exports = [
     component: path.resolve(`src/pages/Formation/Microservices.js`),
   },
   {
+    path: "/microserviceexample/index.html",
+    component: path.resolve(`src/pages/Formation/Microserviceexample.js`),
+  },
+  {
+    path: "/microservicehelp/index.html",
+    component: path.resolve(`src/pages/Formation/Microservicehelp.js`),
+  },
+  {
+    path: "/privacypolicy/index.html",
+    component: path.resolve(`src/pages/Mails/privacypolicy.js`),
+  },
+  {
+    path: "/microservicechallenge/index.html",
+    component: path.resolve(`src/pages/Formation/Microservicechallenge.js`),
+  },
+  {
+    path: "/microservicebenefit/index.html",
+    component: path.resolve(`src/pages/Formation/Microservicebenefit.js`),
+  },
+  {
     path: "/transformation/index.html",
     component: path.resolve(`src/pages/Formation/Transformation.js`),
   },
