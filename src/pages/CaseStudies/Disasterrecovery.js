@@ -25,7 +25,7 @@ const Disasterrecovery = () => {
   // console.log(data)
   return (
     <Layout>
-      <div className="bg-lightgrey">
+      <div className="bg-lightgrey container">
         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
           <div className="pt-5 pb-3">
             <img src={ds} width="100%" alt="Cloud Backup" />

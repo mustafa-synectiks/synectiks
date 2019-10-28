@@ -19,8 +19,8 @@ class Operations extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
-          <div className="container pb-5">
+        <div className="bg-lightgrey container">
+          <div className="pb-5">
             <div className="row main-card pb-5">
               <div className="col-md-12   card-deck">
                 <div className="card btn card-shadow mx-3">
@@ -71,14 +71,15 @@ class Operations extends React.Component {
             </div>
           </div>
 
-          <div className="text-center mt-5 px-4">
-            <h3 className="pt-5">
+          <div className="text-center px-4">
+            <h3 className="py-2">
               24x7 Operations for enterprise managed services
             </h3>
           </div>
-          <div className="pb-5 text-center">
+          <div className="pb-5 pt-3 text-center">
             <div>
               <img
+                className="imgBx"
                 src={OperationsGraph}
                 width="75%"
                 alt="Operations for enterprise managed services"

@@ -4,14 +4,10 @@ import Microservice2 from "../../images/Microservice_2.png"
 import Layout from "../../components/layout"
 
 export class Microserviceexample extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey text-justify ">
+        <div className="bg-lightgrey text-justify container">
           <div className="w-100">
             <img
               height="auto"
@@ -52,6 +48,7 @@ export class Microserviceexample extends React.Component {
             <p>The typical product component diagram will be as follows:</p>
             <div className="w-40 p-5 text-center bg-white border-grey-2px">
               <img
+                className="imgBx"
                 src={Microservice2}
                 width="75%"
                 alt="DevOps Transformation"

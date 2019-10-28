@@ -1,25 +1,160 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
+import { IoIosMail, IoIosCall } from "react-icons/io"
 // import NiceToMeet from "../../images/NiceToMeet.png"
 import "../../components/layout.css"
 import ContactM from "../../components/ContactMe"
+import Particles from "react-particles-js"
 const s = {
   textAlign: "center",
-  marginTop: "2rem",
-  marginBottom: "2rem",
+  width: "100%",
+  display: "block",
 }
 const h = {
-  paddingTop: "2rem",
+  paddingTop: "1.5rem",
 }
+
 export class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <div style={s}>
-          <h1 style={h}>Contact Us</h1>
+        <div class="bg-lightgrey pb-4">
+          <div id="particle-js">
+            <Particles
+              params={{
+                particles: {
+                  number: {
+                    value: 120,
+                    density: {
+                      enable: true,
+                      value_area: 800,
+                    },
+                  },
+                  color: {
+                    value: "#007cc2",
+                  },
+                  shape: {
+                    type: "circle",
+                    stroke: {
+                      width: 0,
+                      color: "#000000",
+                    },
+                    polygon: {
+                      nb_sides: 8,
+                    },
+                  },
+                  opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                      enable: false,
+                      speed: 8,
+                      opacity_min: 0.1,
+                      sync: false,
+                    },
+                  },
+                  size: {
+                    value: 2,
+                    random: true,
+                    anim: {
+                      enable: false,
+                      speed: 140,
+                      size_min: 0.1,
+                      sync: false,
+                    },
+                  },
+                  line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#007cc2",
+                    opacity: 0.4,
+                    width: 1,
+                  },
+                  move: {
+                    enable: true,
+                    speed: 5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                      enable: false,
+                      rotateX: 600,
+                      rotateY: 1200,
+                    },
+                  },
+                },
+                interactivity: {
+                  detect_on: "canvas",
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: "grab",
+                    },
+                    onclick: {
+                      enable: true,
+                      mode: "push",
+                    },
+                    resize: true,
+                  },
+                  modes: {
+                    grab: {
+                      distance: 150,
+                      line_linked: {
+                        opacity: 1,
+                      },
+                    },
+                    bubble: {
+                      distance: 400,
+                      size: 40,
+                      duration: 2,
+                      opacity: 8,
+                      speed: 3,
+                    },
+                    repulse: {
+                      distance: 200,
+                      duration: 0.4,
+                    },
+                    push: {
+                      particles_nb: 4,
+                    },
+                    remove: {
+                      particles_nb: 2,
+                    },
+                  },
+                },
+                retina_detect: true,
+              }}
+            />
+          </div>
+
+          <div class="container bg-white partikle">
+            <div className="row mx-auto" style={s}>
+              <h2 style={h}>Get In Touch</h2>
+              <h6>
+                <b>
+                  <IoIosMail className="rIcon" /> info@synectiks.com
+                  <span className="ml-3">
+                    <IoIosCall className="rIcon" />
+                    609 608 0429 X 102
+                  </span>
+                </b>
+              </h6>
+              <h6>Get in Touch to See How We Can Help Achieve Your IT Goals</h6>
+              <h6></h6>
+              <ContactM />
+              <small className="conctFon">
+                By clicking "<span className="text-primary">Submit</span>", you
+                are confirming that you have shared your data with Synectiks
+                voluntarily and <br /> Synectiks can contact you on the shared
+                coordinates.
+              </small>
+            </div>
+          </div>
         </div>
-        <ContactM />
+
         <Helmet>
           <script
             dangerouslySetInnerHTML={{

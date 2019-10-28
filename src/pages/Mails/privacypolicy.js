@@ -1,10 +1,8 @@
 import * as React from "react";
-import Layout from '../../components/layout'
+// import Layout from '../../components/layout'
 
 export class Privacypolicy extends React.Component {
-  constructor(props ) {
-    super(props);
-  }
+
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -187,12 +185,12 @@ export class Privacypolicy extends React.Component {
                 </p>
               <p>
                 <ol>
-                  <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">https://tools.google.com/dlpage/gaoptout</a></li>
-                  <li>Facebook: <a href="https://www.facebook.com/help/568137493302217" target="_blank">https://www.facebook.com/help/568137493302217</a></li>
-                  <li>LinkedIn: <a href="https://www.linkedin.com/legal/cookie-policy" target="_blank">https://www.linkedin.com/legal/cookie-policy</a></li>
-                  <li>Google AdWords: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></li>
-                  <li>Outbrain Inc.: <a href="https://www.outbrain.com/legal/privacy" target="_blank">https://www.outbrain.com/legal/privacy</a></li>
-                  <li>Marketo: <a href="https://documents.marketo.com/legal/cookies" target="_blank">https://documents.marketo.com/legal/cookies</a></li>
+                  <li>Google Analytics:<a  rel="noopener noreferrer" href="https://tools.google.com/dlpage/gaoptout" target="_blank">https://tools.google.com/dlpage/gaoptout</a></li>
+                  <li>Facebook:<a  rel="noopener noreferrer" href="https://www.facebook.com/help/568137493302217" target="_blank">https://www.facebook.com/help/568137493302217</a></li>
+                  <li>LinkedIn:<a  rel="noopener noreferrer" href="https://www.linkedin.com/legal/cookie-policy" target="_blank">https://www.linkedin.com/legal/cookie-policy</a></li>
+                  <li>Google AdWords:<a  rel="noopener noreferrer" href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></li>
+                  <li>Outbrain Inc.:<a  rel="noopener noreferrer" href="https://www.outbrain.com/legal/privacy" target="_blank">https://www.outbrain.com/legal/privacy</a></li>
+                  <li>Marketo:<a  rel="noopener noreferrer" href="https://documents.marketo.com/legal/cookies" target="_blank">https://documents.marketo.com/legal/cookies</a></li>
                 </ol>
               </p>
               <h3><li>Advertising</li></h3>
@@ -294,7 +292,7 @@ export class Privacypolicy extends React.Component {
               <h3><li>Contact Us</li></h3>
               <p>
                 If you have any questions or concerns about this Privacy Policy, please feel free to
-                email us at <a href="/contactus/index.html">info@synectiks.com</a>.
+                email us at<a  rel="noopener noreferrer" href="/contactus/index.html">info@synectiks.com</a>.
                 </p>
               <p>The data controller of your personal information is Synectiks Inc.</p>
 

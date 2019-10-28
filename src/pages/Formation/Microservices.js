@@ -7,10 +7,6 @@ import mm from "../../images/monovsmicro.png"
 import ms from "../../images/Microservice_1.png"
 import mcs from "../../images/Microservicesmain.jpg"
 
-// const wid = {
-//   width: "91%",
-// }
-
 export class Microservices extends React.Component {
   constructor(props) {
     super(props)
@@ -23,7 +19,6 @@ export class Microservices extends React.Component {
 
     this.toggle = this.toggle.bind(this)
   }
-
   toggle() {
     this.setState(prevState => ({
       modal: !prevState.modal,
@@ -83,7 +78,7 @@ export class Microservices extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey text-justify ">
+        <div className="bg-lightgrey text-justify">
           <div className="w-100">
             <img
               height="auto"
@@ -92,100 +87,118 @@ export class Microservices extends React.Component {
               src={mcs}
               alt="Microservices"
             />
+            <div className="container">
+              <div className="sidenav mt-5">
+                <a
+                  href="/microserviceexample/index.html"
+                  className="text-white"
+                >
+                  Example&nbsp;of&nbsp;Microservices
+                </a>
+                <a
+                  href="/microservicebenefit/index.html"
+                  className="text-white"
+                >
+                  Benefits&nbsp;of&nbsp;Microservices
+                </a>
+                <a
+                  href="/microservicechallenge/index.html"
+                  className="text-white"
+                >
+                  Challenges&nbsp;of&nbsp;Microservices
+                </a>
+                <a href="/microservicehelp/index.html" className="text-white">
+                  How&nbsp;we&nbsp;can help you?
+                </a>
+              </div>
 
-            <div className="sidenav mt-5">
-              <a href="/microserviceexample/index.html" className="text-white">
-                Example&nbsp;of&nbsp;Microservices
-              </a>
-              <a href="/microservicebenefit/index.html" className="text-white">
-                Benefits&nbsp;of&nbsp;Microservices
-              </a>
-              <a
-                href="/microservicechallenge/index.html"
-                className="text-white"
-              >
-                Challenges&nbsp;of&nbsp;Microservices
-              </a>
-              <a href="/microservicehelp/index.html" className="text-white">
-                How&nbsp;we&nbsp;can help you?
-              </a>
-            </div>
-
-            <div className="main pr-5">
-              <div className="container pt-5 lineHeight-24">
-                <p className="">
-                  To accommodate the increasing complexity of functional
-                  requirements, IT applications have embraced a variety of
-                  architectural patterns. Organizations must meet ever-changing
-                  business demands — from mainframe applications and
-                  client-server to service oriented architecture (SOA) and
-                  microservices.
-                  <br />{" "}
-                </p>
-                <p>
-                  <i>
-                    Microservices architecture is a combination of successful
-                    and proven concepts of software engineering such as agile
-                    software development, SOA, API-first design and continuous
-                    delivery (CD). This architecture and organizational approach
-                    to software development is designed to accelerate
-                    development cycles, foster innovation and ownership and
-                    improve the ability to maintain and scale applications.
+              <div className="main pr-5">
+                <div className="container pt-5 lineHeight-24">
+                  <p className="">
+                    To accommodate the increasing complexity of functional
+                    requirements, IT applications have embraced a variety of
+                    architectural patterns. Organizations must meet
+                    ever-changing business demands — from mainframe applications
+                    and client-server to service oriented architecture (SOA) and
+                    microservices.
                     <br />{" "}
-                  </i>
-                </p>
-                <p>
-                  Despite technological advancements, 90 percent of business IT
-                  applications are legacy and what are known as “monolithic”.
-                  These range from mainframe apps where UI, business logic and
-                  data storage reside on machines, to client-server applications
-                  where layered technologies that support UI, business
-                  functionality and data are stored horizontally. Microservices
-                  architecture, on the other hand, divides the functionality
-                  into cohesive verticals by implementing a specific domain.
-                </p>
-              </div>
-
-              <div
-                className="pt-3 text-center"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <img src={ms} width="60%" alt="Microservices Migration" />{" "}
-              </div>
-              <div
-                className="pt-3 px-5"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <h2 className="container text-center px-5 py-3">
-                  Monolith Vs Microservices
-                </h2>
-                <div className="text-center">
-                  <img src={mm} width="75%" alt="Monolith Vs Microservices" />{" "}
+                  </p>
+                  <p>
+                    <i>
+                      Microservices architecture is a combination of successful
+                      and proven concepts of software engineering such as agile
+                      software development, SOA, API-first design and continuous
+                      delivery (CD). This architecture and organizational
+                      approach to software development is designed to accelerate
+                      development cycles, foster innovation and ownership and
+                      improve the ability to maintain and scale applications.
+                      <br />{" "}
+                    </i>
+                  </p>
+                  <p>
+                    Despite technological advancements, 90 percent of business
+                    IT applications are legacy and what are known as
+                    “monolithic”. These range from mainframe apps where UI,
+                    business logic and data storage reside on machines, to
+                    client-server applications where layered technologies that
+                    support UI, business functionality and data are stored
+                    horizontally. Microservices architecture, on the other hand,
+                    divides the functionality into cohesive verticals by
+                    implementing a specific domain.
+                  </p>
                 </div>
-              </div>
-              <div className="container d-flex  px-5 py-4 flex-col ">
-                <p>
-                  <a
-                    className="navlink navfont noLine text-logoblue cursPoint"
-                    onClick={this.toggle}
-                  >
-                    <small>Contact&nbsp;Us&nbsp;</small>
-                  </a>
-                  to learn more about SYNECTIKS MicroServices.
-                </p>
-              </div>
 
-              <div className="">
-                <Modal isOpen={this.state.modal} toggle={this.toggle}>
-                  <ModalHeader className="bg-lightgrey" toggle={this.toggle}>
-                    Contact Us
-                  </ModalHeader>
-                  <ModalBody className="bg-lightgrey brdr-btm-030">
-                    <ModalContact />
-                  </ModalBody>
-                </Modal>
+                <div
+                  className="pt-3 text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    src={ms}
+                    width="60%"
+                    alt="Microservices Migration"
+                    className="imgBx"
+                  />{" "}
+                </div>
+                <div
+                  className="pt-3 px-5"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <h2 className="container text-center px-5 py-3">
+                    Monolith Vs Microservices
+                  </h2>
+                  <div className="text-center">
+                    <img
+                      src={mm}
+                      width="75%"
+                      alt="Monolith Vs Microservices"
+                      className="imgBx"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="container d-flex  px-5 py-4 flex-col ">
+                  <p>
+                    <a
+                      className="navlink navfont noLine text-logoblue cursPoint"
+                      onClick={this.toggle}
+                    >
+                      <small>Contact&nbsp;Us&nbsp;</small>
+                    </a>
+                    to learn more about SYNECTIKS MicroServices.
+                  </p>
+                </div>
+
+                <div className="">
+                  <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                    <ModalHeader className="bg-lightgrey" toggle={this.toggle}>
+                      Contact Us
+                    </ModalHeader>
+                    <ModalBody className="bg-lightgrey brdr-btm-030">
+                      <ModalContact />
+                    </ModalBody>
+                  </Modal>
+                </div>
               </div>
             </div>
           </div>

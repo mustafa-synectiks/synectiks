@@ -11,7 +11,7 @@ export class Networkservices extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
+        <div className="bg-lightgrey container">
           <div className="w-100 pb-3">
             <img
               height="auto"

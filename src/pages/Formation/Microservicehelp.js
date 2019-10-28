@@ -6,9 +6,6 @@ import Microservice from "../../images/Microservice_11.png"
 import Layout from "../../components/layout"
 
 export class Microservicehelp extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -16,7 +13,7 @@ export class Microservicehelp extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey text-justify ">
+        <div className="bg-lightgrey text-justify">
           <div className="w-100">
             <img
               height="auto"
@@ -27,7 +24,7 @@ export class Microservicehelp extends React.Component {
             />
           </div>
 
-          <div className="px-5">
+          <div className="container">
             <div className="pb-3">
               <a href="/microservices/index.html">
                 <button className="btn text-white bg-logoblue btnLearn">
@@ -50,6 +47,7 @@ export class Microservicehelp extends React.Component {
             </p>
             <div className="w-40 p-5 text-center">
               <img
+                className="imgBx"
                 src={MicroserviceT}
                 width="75%"
                 alt="DevOps Transformation"
@@ -153,7 +151,12 @@ export class Microservicehelp extends React.Component {
               of an API driven cloud architecture and get going faster.
             </p>
             <div className="w-40 p-5 text-center">
-              <img src={Foundation} width="75%" alt="DevOps Transformation" />{" "}
+              <img
+                src={Foundation}
+                width="75%"
+                alt="DevOps Transformation"
+                className="imgBx"
+              />{" "}
             </div>
             <p className="lineHeight-24">
               How much effort it takes to perform a Monolith to Microservices
@@ -190,7 +193,12 @@ export class Microservicehelp extends React.Component {
             </p>
             <h4>Why SYNECTIKS should be your trusted microservice partner?</h4>
             <div className="w-40 p-5 text-center">
-              <img src={Microservice} width="75%" alt="DevOps Transformation" />{" "}
+              <img
+                src={Microservice}
+                width="75%"
+                alt="DevOps Transformation"
+                className="imgBx"
+              />{" "}
             </div>
           </div>
           <div className="pb-3 px-5">

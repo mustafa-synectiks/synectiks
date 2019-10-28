@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import { Formik } from "formik"
-import * as Yup from "yup"
+// import { Formik } from "formik"
+// import * as Yup from "yup"
+// import NiceToMeet from "../../images/NiceToMeet.png"
 import Layout from "../../components/layout"
-import NiceToMeet from "../../images/NiceToMeet.png"
 import "../../components/layout.css"
 import ContactM from "../../components/ContactMe"
 const s = {
@@ -18,10 +18,12 @@ export class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <div style={s}>
-          <h1 style={h}>Ask For Demo</h1>
+        <div class="container">
+          <div style={s}>
+            <h1 style={h}>Ask For Demo</h1>
+          </div>
+          <ContactM />
         </div>
-        <ContactM />
 
         <Helmet>
           <script

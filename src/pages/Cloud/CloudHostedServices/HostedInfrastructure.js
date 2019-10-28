@@ -82,8 +82,8 @@ export class HostedInfrastructure extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
-          <div className=" text-black w-100 container-fluid text-white flex-col d-flex text-justify">
+        <div className="bg-lightgrey container">
+          <div className=" text-black w-100 text-white flex-col d-flex text-justify">
             <div className="mt-2 pt-3 text-black">
               <div className="d-flex">
                 <h1>CLOUD&nbsp; &#8208;</h1>
@@ -126,85 +126,38 @@ export class HostedInfrastructure extends React.Component {
             </div>
           </div>
 
-          <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
-            <div className="py-3 col-md-2 nav-item dropdown bg-logoblue brdr025">
+          <div className=" bg-white d-flex justify-content-between align-items-center flex-col text-center col-lg-12">
+            <div className="py-3 col-md-4 bg-logoblue brdr025">
               <a
-                to="/HostedInfrastructure"
-                id="hosted"
-                className="text-white noLine"
+                className="text-white  noLine"
+                href="/HostedInfrastructure/index.html"
               >
-                <a
-                  className="noLine"
-                  href="#"
-                  id="cloudnav"
-                  data-toggle="dropdown"
-                >
-                  <span id="hosted" className="text-white">
-                    Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;
-                  </span>
-                </a>
-                <div className="dropdown-menu w17em">
-                  <a
-                    className="dropdown-item"
-                    to="/HostedInfrastructure/index.html"
-                  >
-                    Hosted Infrastructure
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="/CloudManagedBackup/index.html"
-                  >
-                    Cloud Managed Backup
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="/CloudDisasterRecovery/index.html"
-                  >
-                    Cloud Disaster Recovery
-                  </a>
-                </div>
+                Hosted Infrastructure
               </a>
             </div>
-
-            <div className="py-3 col-md-2">
+            <div className="py-3 col-md-4">
               <a
-                href="/privatecloud/index.html"
                 className="text-logoblue bg-white noLine"
+                href="/CloudManagedBackup/index.html"
               >
-                <b>Private Cloud</b>
+                Cloud Managed Backup
               </a>
             </div>
-            <div className="py-3 col-md-2">
+            <div className="py-3 col-md-4">
               <a
-                href="/hybridcloud/index.html"
                 className="text-logoblue bg-white noLine"
+                href="/CloudDisasterRecovery/index.html"
               >
-                <b>Hybrid Cloud</b>
-              </a>
-            </div>
-            <div className="py-3 col-md-2">
-              <a
-                href="/publiccloud/index.html"
-                className="text-logoblue bg-white noLine"
-              >
-                <b>Public Cloud</b>
-              </a>
-            </div>
-            <div className="py-3 col-md-2">
-              <a
-                href="/colocation/index.html"
-                className="text-logoblue bg-white noLine"
-              >
-                <b>Colocation</b>
+                Cloud Disaster Recovery
               </a>
             </div>
           </div>
-          <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify">
+          <div className="text-black w-100 mt-3 py-2 flex-col d-flex text-justify">
             <div className="w-100">
               <img src={HostedInfra} width="100%" alt="Hosted Infrastructure" />{" "}
             </div>
 
-            <div className="w-100  pl-5 pr-3 text-black">
+            <div className="w-100  pl-3 pr-3 text-black">
               <h2 className="my-3">Hosted Infrastructure</h2>
               <p className="lineHeight-24">
                 SYNECTIKS Infrastructure as a Service (IaaS) provides computing,
@@ -232,7 +185,7 @@ export class HostedInfrastructure extends React.Component {
             </div>
           </div>
 
-          <div className="w-100 px-5  text-black">
+          <div className="w-100 text-black">
             <h4 className="my-3">Let SYNECTIKS keep Your Data Secure</h4>
             <p className="lineHeight-24">
               SYNECTIKS safeguards data in facilities that are protected by

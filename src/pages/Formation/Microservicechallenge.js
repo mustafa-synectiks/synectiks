@@ -5,9 +5,6 @@ import Microservice8 from "../../images/Microservice_8.png"
 import Microservice9 from "../../images/Microservice_9.png"
 import Layout from "../../components/layout"
 export class Microservicechallenge extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -15,7 +12,7 @@ export class Microservicechallenge extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey text-justify ">
+        <div className="bg-lightgrey text-justify">
           <div className="w-100">
             <img
               height="auto"
@@ -26,7 +23,7 @@ export class Microservicechallenge extends React.Component {
             />
           </div>
 
-          <div className="px-5">
+          <div className="container">
             <div className="pb-3">
               <a href="/microservices/index.html">
                 <button className="btn text-white bg-logoblue btnLearn">
@@ -154,17 +151,19 @@ export class Microservicechallenge extends React.Component {
             </p>
             <div className="w-40 p-5 text-center">
               <img
+                className="imgBx"
                 src={Microservice7}
                 width="75%"
                 alt="DevOps Transformation"
-              />{" "}
+              />
             </div>
             <div className="w-40 p-5 text-center">
               <img
+                className="imgBx"
                 src={Microservice8}
                 width="75%"
                 alt="DevOps Transformation"
-              />{" "}
+              />
             </div>
             <p className="lineHeight-24">
               <h2>One Key Cultural Driver</h2>
@@ -199,6 +198,7 @@ export class Microservicechallenge extends React.Component {
 
             <div className="w-40 p-5 text-center">
               <img
+                className="imgBx"
                 src={Microservice9}
                 width="75%"
                 alt="DevOps Transformation"

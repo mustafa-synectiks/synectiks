@@ -15,10 +15,10 @@ export class Tformation extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
-          <div className="container pb-5">
-            <div className="row main-card pb-5">
-              <div className="col-md-12   card-deck">
+        <div className="bg-lightgrey container">
+          <div className="py-2">
+            <div className="row main-card">
+              <div className="card-deck">
                 <div className="card btn card-shadow mx-3 pt-3">
                   <a href="/foundation/index.html" className="noLine">
                     <img
@@ -66,17 +66,16 @@ export class Tformation extends React.Component {
             </div>
           </div>
 
-          <div className="text-center p-5">
+          <div className="text-center p-2 mt-5">
             <div className="my-5">
-              <img src={Refactor} width="75%" alt="Refactor" />
+              <img src={Refactor} className="w-100 imgBx" alt="Refactor" />
             </div>
             <div className="my-5">
               <img
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="  mx-auto"
+                className="w-100 imgBx"
                 src={transformation2}
-                width="75%"
                 alt="Transformation"
               />
             </div>
@@ -84,9 +83,8 @@ export class Tformation extends React.Component {
               <img
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className=" mx-auto"
+                className="w-100 imgBx"
                 src={EnterprisePlatform}
-                width="75%"
                 alt="Redevelopment Microservice"
               />
             </div>
@@ -94,9 +92,8 @@ export class Tformation extends React.Component {
               <img
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="   mx-auto"
+                className="w-100 imgBx"
                 src={Redevelopment}
-                width="75%"
                 alt="Redevelopment Analytics"
               />
             </div>
@@ -104,9 +101,8 @@ export class Tformation extends React.Component {
               <img
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="mx-auto"
+                className="w-100 imgBx"
                 src={Rehost}
-                width="75%"
                 alt="Rehost"
               />
             </div>

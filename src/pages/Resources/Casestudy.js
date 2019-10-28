@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
-
 import SoftwareMigration from "../../images/CS_Software_Migration.jpg"
 import RealtimeMonitoring from "../../images/CS_Realtime_Monitoring.jpg"
 import SoftwareDefinedTransformation from "../../images/CS_SoftwareDefinedTransformation.jpg"
@@ -17,8 +16,8 @@ export class Casestudy extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
-          <div className="container pt-5">
+        <div className="bg-lightgrey container">
+          <div className="pt-5">
             <div className="text-center w-100 pb-3">
               <h1 className="text-center bg-logoblue text-white">
                 Success Stories

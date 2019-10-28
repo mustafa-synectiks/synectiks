@@ -15,7 +15,7 @@ export class Storagetier extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
+        <div className="bg-lightgrey container">
           <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
             <div className="w-40 pt-5 pb-3">
               <img src={st} width="100%" alt="Cloud Backup" />{" "}

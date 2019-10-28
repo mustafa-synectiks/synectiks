@@ -42,12 +42,12 @@ export class Careers extends React.Component {
                         alt="Careers"
                     />
                 </div>
-
+<div className='container'>
                 <div className='text-center pb-3 lineHeight-24' >
                     <h2>Careers</h2>
                 </div>
 
-                <div className="w-100 px-5 text-black text-justify" >
+                <div className="w-100  text-black text-justify" >
                     <p className="lineHeight-24 pb-3">
                         <h4>Changing the game takes talent - Yours!</h4>
                         Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce
@@ -187,6 +187,7 @@ export class Careers extends React.Component {
                 </div>
                 <div className="container">
                     <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
+                </div>
                 </div>
                 </div>
                 <Helmet>

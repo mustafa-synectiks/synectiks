@@ -31,11 +31,16 @@ export class Featured extends React.Component {
             </div>
           </div>
 
-          <div className="px-5">
+          <div className="container">
             <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col">
               <div>
                 <div className="p-5">
-                  <img src={FS} width="100%" alt="Enterprise-DevOps" />{" "}
+                  <img
+                    src={FS}
+                    width="100%"
+                    alt="Enterprise-DevOps"
+                    className="imgBx"
+                  />
                   <div className="text-group align-self-center">
                     <h6 className="font-weight-bold pt-2">
                       Discover the business value of Synectiks Open Xformation
@@ -45,6 +50,7 @@ export class Featured extends React.Component {
                     <a
                       href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-DevOps-Strategies.pdf"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Learn more <i className="fa fa-arrow-right" />
                     </a>
@@ -55,14 +61,13 @@ export class Featured extends React.Component {
               <div>
                 <div className="p-5">
                   <img
-                    className="border-grey-2px"
+                    className="border-grey-2px imgBx"
                     src={FT}
                     width="100%"
                     alt="Enterprise-Transformation"
-                  />{" "}
+                  />
                   <div className="text-group align-self-center ">
                     <h6 className="font-weight-bold pt-2">
-                      {" "}
                       Discover how Synectiks open products based service
                       delivery approach creating significant differences in
                       service sector.{" "}
@@ -70,6 +75,7 @@ export class Featured extends React.Component {
                     <a
                       href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-Transformation.pdf"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Learn more <i className="fa fa-arrow-right" />
                     </a>
@@ -85,6 +91,7 @@ export class Featured extends React.Component {
                       src={FMP}
                       width="100%"
                       alt="Enterprise-Transformation"
+                      className="imgBx"
                     />{" "}
                     <div className="text-group align-self-center">
                       <h6 className="font-weight-bold pt-2">
@@ -96,6 +103,7 @@ export class Featured extends React.Component {
                       <a
                         href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Microservice-Platform.pdf"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Learn more <i className="fa fa-arrow-right" />
                       </a>
@@ -109,6 +117,7 @@ export class Featured extends React.Component {
                       src={FP}
                       width="100%"
                       alt="Enterprise-Transformation"
+                      className="imgBx"
                     />{" "}
                     <div className="text-group align-self-center">
                       <h6 className="font-weight-bold pt-2">
@@ -119,6 +128,7 @@ export class Featured extends React.Component {
                       <a
                         href="https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Open-Platform.pdf"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Learn more <i className="fa fa-arrow-right" />
                       </a>

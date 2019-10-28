@@ -4,7 +4,6 @@ import cb from "../../images/Storagemigration.jpg"
 import as from "../../images/Application-Services-Slider.png"
 import Layout from "../../components/layout"
 
-
 const brdr = {
   borderRadius: "0 0.25rem 0.25rem 0",
 }
@@ -17,7 +16,7 @@ class Storagemigration extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey">
+        <div className="bg-lightgrey container">
           <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
             <div className="w-40 pt-5 pb-3">
               <img src={cb} width="100%" alt="Cloud Backup" />{" "}
@@ -201,7 +200,6 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
           />
         </Helmet>
       </Layout>
-
     )
   }
 }

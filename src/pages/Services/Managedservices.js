@@ -21,6 +21,8 @@ export class Managedservices extends React.Component {
               alt="Managed Services"
             />
           </div>
+          <div class="container">
+
 
           <div className=" text-black w-100  text-white px-5 flex-col d-flex text-justify">
             <div className="w-100  text-black">
@@ -191,7 +193,8 @@ export class Managedservices extends React.Component {
                 </ul>
               </p>
             </div>
-          </div>
+            </div>
+            </div>
         </div>
         <Helmet>
           <script

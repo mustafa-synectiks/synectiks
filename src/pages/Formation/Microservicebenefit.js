@@ -4,9 +4,7 @@ import Microservices3 from "../../images/Microservice_3.png"
 import Layout from "../../components/layout"
 
 export class Microservicebenefit extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -14,7 +12,7 @@ export class Microservicebenefit extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-lightgrey text-justify ">
+        <div className="bg-lightgrey text-justify">
           <div className="w-100">
             <img
               height="auto"
@@ -25,7 +23,7 @@ export class Microservicebenefit extends React.Component {
             />
           </div>
 
-          <div className="px-5">
+          <div className="container">
             <div className="pb-3">
               <a href="/microservices/index.html">
                 <button className="btn text-white bg-logoblue btnLearn">
@@ -94,6 +92,7 @@ export class Microservicebenefit extends React.Component {
             </div>
             <div className="w-40 p-5 text-center">
               <img
+                className="imgBx"
                 src={Microservices3}
                 width="75%"
                 alt="DevOps Transformation"

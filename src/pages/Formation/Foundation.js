@@ -13,10 +13,10 @@ import Microservice from "../../images/Microservice_7.png"
 const Foundation = () => {
   return (
     <Layout>
-      <div className="bg-lightgrey ">
-        <div className="container pb-5">
-          <div className="row main-card pb-5">
-            <div className="col-md-12   card-deck">
+      <div className="bg-lightgrey container">
+        <div className="pb-5">
+          <div className="row main-card px-3">
+            <div className="card-deck">
               <div className="card btn card-shadow mx-3 pt-3">
                 <a href="/foundation/index.html" className="noLine">
                   <img
@@ -64,7 +64,7 @@ const Foundation = () => {
           </div>
         </div>
 
-        <div className="p-5 mt-5 text-justify">
+        <div className="p-2 mt-5 text-justify">
           <h3 className="fh3 text-center">
             Synectiks&nbsp;Open&nbsp;Xformation Platform
           </h3>
@@ -107,7 +107,7 @@ const Foundation = () => {
         </div>
 
         <div
-          className="px-5 text-justify"
+          className="  text-justify"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -116,7 +116,7 @@ const Foundation = () => {
           </h3>
           <div className="text-center">
             <img
-              className="text-center"
+              className="text-center imgBx"
               src={foundation}
               width="60%"
               alt="How Foundation Works?"
@@ -176,17 +176,13 @@ const Foundation = () => {
           </ol>
 
           <div
-            className="px-5 py-3"
+            className=" px-5 py-3"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
             <h3 className="fh3 text-center">Key&nbsp;Features</h3>
           </div>
-          <div
-            className="px-5 py-3"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div className="  py-3" data-aos="fade-up" data-aos-duration="2000">
             <h3 className="fh3 text-center">
               Synectiks Open Xformation Platform
             </h3>
@@ -197,6 +193,7 @@ const Foundation = () => {
             data-aos-duration="2000"
           >
             <img
+              className="imgBx"
               src={OpenXformationPlatform}
               width="75%"
               alt="Synectiks Open Xformation Platform"
@@ -255,7 +252,7 @@ const Foundation = () => {
         </div>
 
         <div
-          className="p-5 text-justify lineHeight-24"
+          className="text-justify lineHeight-24"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -264,6 +261,7 @@ const Foundation = () => {
           </h3>
           <div className=" text-center">
             <img
+              className="imgBx"
               src={Microservice}
               width="75%"
               alt="System Architecture of Xformation Platform"
@@ -329,14 +327,14 @@ const Foundation = () => {
         </div>
 
         <div
-          className="px-5 text-justify "
+          className="text-justify "
           data-aos="fade-up"
           data-aos-duration="2000"
         >
           <h3 className="fh3 text-center pb-3">
             Application Block Architecture
           </h3>
-          <div className="text-center bg-white border-grey-2px ">
+          <div className="text-center bg-white imgBx">
             <img
               src={ApplicationBlockArchitechture}
               width="75%"
@@ -427,8 +425,10 @@ const Foundation = () => {
                 href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/videos"
                 target="_blank"
                 aria-hidden="true"
+                rel="noopener noreferer"
               >
                 <img
+                  className="imgBx"
                   src={Video}
                   width="80%"
                   alt="Synectiks Enterprise Transformtaion"
