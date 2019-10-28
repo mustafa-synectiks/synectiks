@@ -6,9 +6,9 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   useEffect(() => {
-    $(function ($) {
+    $(function($) {
       let url = window.location.href
-      $(".dropdown-item").each(function () {
+      $(".dropdown-item").each(function() {
         if (this.href === url) {
           $(this)
             .parents(".nav-item")
@@ -19,17 +19,17 @@ const Layout = ({ children }) => {
     })
 
     // Cookie Strip
-    $(document).ready(function () {
-      $("#hide").click(function () {
+    $(document).ready(function() {
+      $("#hide").click(function() {
         $(".content").hide()
       })
     })
 
-    $(document).ready(function () {
+    $(document).ready(function() {
       $("#otherservice").hide()
     })
     // $("#otherservice").style.display = "none";
-    $("#service").change(function () {
+    $("#service").change(function() {
       var val = $(this).val()
       $("#otherservice").hide()
       if (val == "Others") {
@@ -40,10 +40,10 @@ const Layout = ({ children }) => {
       }
     })
 
-    $(document).ready(function () {
+    $(document).ready(function() {
       $("#othersource").hide()
     })
-    $("#source").change(function () {
+    $("#source").change(function() {
       var val = $(this).val()
       $("#othersource").hide()
       if (val == "Othersource") {

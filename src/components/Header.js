@@ -4,14 +4,14 @@ import { FaBars } from "react-icons/fa"
 import Topbar from "./Topbar"
 import logo from "../images/logo.png"
 
-const z = {
-  zIndex: "9999 !important",
-}
+// const z = {
+//   zIndex: "9999 !important",
+// }
 
 const Header = () => {
   return (
     <div className="FixedHeader">
-      <div className="container d-flex justify-content-between mt-3">
+      <div className="bg-top d-flex justify-content-between">
         <div></div>
         <Topbar />
       </div>
@@ -27,7 +27,7 @@ const Header = () => {
             <Nav className="ml-auto">
               <NavDropdown title="Transformation" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/devops/index.html">
-                  Devops Transformation
+                  DevOps Transformation
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/foundation/index.html">
                   Foundation
@@ -50,30 +50,30 @@ const Header = () => {
                   Cloud Disaster Recovery
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Cloud Solutions" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/privatecloud/index.html">
-                  Private Cloud
+              <NavDropdown title="Solutions" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/publiccloud/index.html">
+                  Public Cloud
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/hybridcloud/index.html">
                   Hybrid Cloud
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/publiccloud/index.html">
-                  Public Cloud
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Item href="/colocation/index.html">
+                {/* <NavDropdown.Item href="/privatecloud/index.html">
+                  Monitoring & Analytics
+                </NavDropdown.Item> */}
+                {/* <NavDropdown.Item href="/colocation/index.html">
                   Colocation
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Services" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/applicationservices/index.html">
-                  Application Services
+                  Office-365 Services
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/managedservices/index.html">
                   Managed Services
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/networkservices/index.html">
+                {/* <NavDropdown.Item href="/networkservices/index.html">
                   Network Services
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Resources" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/featured/index.html">

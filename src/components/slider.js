@@ -2,7 +2,7 @@ import React from "react"
 import "./layout.css"
 // import "bootstrap/dist/css/bootstrap.min.css"
 import Carousel from "react-bootstrap/Carousel"
-import Button from "react-bootstrap/Button"
+// import Button from "react-bootstrap/Button"
 import s1 from "../images/Slider_1.jpg"
 import s2 from "../images/Slider2.jpg"
 import s3 from "../images/Slider3.jpg"
@@ -34,7 +34,7 @@ const Slider = () => {
             <div className="clearfix">
               <a
                 href="/foundation/index.html"
-                className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
+                className="btn text-white bg-yellow text-uppercase btnLearn float-left posRT"
               >
                 Learn More
               </a>
@@ -52,7 +52,7 @@ const Slider = () => {
             <div className="clearfix">
               <a
                 href="/devops/index.html"
-                className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
+                className="btn text-white bg-yellow text-uppercase btnLearn float-left posRT"
               >
                 learn more
               </a>
@@ -84,8 +84,8 @@ const Slider = () => {
           <Carousel.Caption>
             <div className="clearfix">
               <a
-                href="/enterprisemanagedservice/index.html"
-                className="btn text-white bg-logoblue text-uppercase btnLearn float-left"
+                href="/managedservices/index.html"
+                className="btn text-white bg-yellow text-uppercase btnLearn float-left posRT "
               >
                 learn more
               </a>
@@ -98,7 +98,7 @@ const Slider = () => {
             <div className="clearfix">
               <a
                 href="/CloudManagedBackup/index.html"
-                className="btn text-white bg-yellow text-uppercase btnLearn float-left"
+                className="btn text-white bg-yellow text-uppercase btnLearn float-left posRT"
               >
                 learn more
               </a>
@@ -109,71 +109,69 @@ const Slider = () => {
           <img className="d-block w-100" src={s6} alt="Why Synectiks" />
         </Carousel.Item>
       </Carousel>
-      <div className="bg-lightgrey pt-1">
-        <div className="text-center w-100 mb-2">
-          <h4 className="mb-1 py-1 stripfont bg-logoblue text-white">
+      <div className="bg-lightgrey">
+        <div className="text-center w-100">
+          <h4 className="py-1 stripfont bg-primary text-white">
             ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM
           </h4>
         </div>
         <div className="container">
           <div>
-            <div className="text-center w-100 py-5 mt-1 txt mt-card ">
+            <div className="text-center w-100 my-4 txt mt-card ">
               <h3 className="">
                 <b>Outcome-based Solution Offerings</b>
               </h3>
             </div>
             <div className="row">
-              <div className="card-deck">
-                <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/foundation/index.html" className="noLine">
-                    <img
-                      className="card-img-top"
-                      src={OpenPlatform}
-                      alt="Foundation"
-                    />
-                    <div className="card-body">
-                      <h2 className="text-center text-uppercase">
-                        Open Platform
-                      </h2>
-                    </div>
-                  </a>
-                </div>
+              <div className="card btn col-md-3 col-lg-4 col-xl-4 card-shadow pt-3">
+                <a href="/foundation/index.html" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src={OpenPlatform}
+                    alt="Foundation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">
+                      Open Platform
+                    </h2>
+                  </div>
+                </a>
+              </div>
 
-                <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/transformation/index.html" className="noLine">
-                    <img
-                      className="card-img-top"
-                      src={Transformation}
-                      alt="Transformation"
-                    />
-                    <div className="card-body">
-                      <h2 className="text-center text-uppercase">
-                        Transformation
-                      </h2>
-                    </div>
-                  </a>
-                </div>
+              <div className="card btn col-md-3 col-lg-4 col-xl-4 card-shadow pt-3">
+                <a href="/transformation/index.html" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src={Transformation}
+                    alt="Transformation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">
+                      Transformation
+                    </h2>
+                  </div>
+                </a>
+              </div>
 
-                <div className="card btn col-md-4 card-shadow mx-3 pt-3">
-                  <a href="/operations/index.html" className="noLine">
-                    <img
-                      className="card-img-top"
-                      src={Solutions}
-                      alt="Operation"
-                    />
-                    <div className="card-body">
-                      <h2 className="text-center text-uppercase">Solutions</h2>
-                    </div>
-                  </a>
-                </div>
+              <div className="card btn col-md-3 col-lg-4 col-xl-4 card-shadow pt-3">
+                <a href="/operations/index.html" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src={Solutions}
+                    alt="Operation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">Solutions</h2>
+                  </div>
+                </a>
               </div>
             </div>
-            <Button
+            <a
               className="btn btn-demo noLine noLine text-white z"
               href="/askfordemo/index.html"
             >
               Ask For Demo
-            </Button>
+            </a>
           </div>
           {/* Card Ends */}
 

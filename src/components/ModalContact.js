@@ -1,73 +1,11 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 import { Formik } from "formik"
 import * as Yup from "yup"
 
-const mcontact = {
-  width: "100%",
-}
-
-function validate(
-  firstname,
-  lastname,
-  email,
-  company,
-  jobtitle,
-  country,
-  contact,
-  source,
-  service,
-  otherservice,
-  othersource
-) {
-  // we are going to store errors for all fields
-  // in a signle array
-  const errors = []
-
-  if (firstname.length === 0) {
-    errors.push("First Name can't be empty")
-  }
-  if (lastname.length === 0) {
-    errors.push("Last Name can't be empty")
-  }
-  if (jobtitle.length === 0) {
-    errors.push("Job Title can't be empty")
-  }
-  if (country.length === 0) {
-    errors.push("Country can't be empty")
-  }
-  if (contact.length === 0) {
-    errors.push("Contact number can't be empty")
-  }
-
-  if (email.length < 5) {
-    errors.push("Email should be at least 5 charcters long")
-  }
-  if (email.split("").filter(x => x === "@").length !== 1) {
-    errors.push("Email should contain a @")
-  }
-  if (email.indexOf(".") === -1) {
-    errors.push("Email should contain at least one dot")
-  }
-
-  if (company.length < 6) {
-    errors.push("Company name should be mentioned")
-  }
-  if (source.length < 6) {
-    errors.push("Select following option")
-  }
-  if (service.length < 6) {
-    errors.push("Select following option")
-  }
-  if (otherservice.length < 6) {
-    errors.push("Please mention service")
-  }
-  if (othersource.length < 6) {
-    errors.push("Please mention source")
-  }
-
-  return errors
-}
+// const mcontact = {
+//   width: "100%",
+// }
 
 const ModalContact = () => (
   <Formik
